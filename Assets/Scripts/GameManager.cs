@@ -31,6 +31,7 @@ public class GameManager : Singleton<GameManager>, IObserver
     public void OnNotify()
     {
         throw new System.NotImplementedException();
+        //do something idk how this design pattern works
     }
 
     private void OnEnable() => sampleSubject.AddObserver(this);
