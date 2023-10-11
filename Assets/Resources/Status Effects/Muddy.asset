@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32549f1345d484b4d8f743cfb42845ed, type: 3}
+  m_Name: Muddy
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: 9b5d468c6e95aee4abcfdc361c5c4cd8, type: 3}
+  _name: Muddy
+  _spriteColor: {r: 1, g: 0.58280706, b: 0, a: 1}
+  startEffectClip: {fileID: 0}
+  endEffectClip: {fileID: 0}
+  DOTAmount: 0
+  movementPenalty: 0.5
+  duration: 10
