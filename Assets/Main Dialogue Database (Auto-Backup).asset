@@ -1517,7 +1517,7 @@ MonoBehaviour:
       typeString: CustomFieldType_Actor
     overrideSettings:
       useOverrides: 0
-      overrideSubtitleSettings: 0
+      overrideSubtitleSettings: 1
       showNPCSubtitlesDuringLine: 1
       showNPCSubtitlesWithResponses: 1
       showPCSubtitlesDuringLine: 0
@@ -1676,7 +1676,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Lets recollect our past for a moment, before we venture out into
+        value: '"Let us recollect our past for a moment, before we venture out into
           Anders."'
         type: 0
         typeString: CustomFieldType_Text
@@ -1732,7 +1732,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"[var=PlayerName], it''s a fine name we''ve been given by our elders."'
+        value: '"[var=PlayerName], it''s a fine name we''ve been given by our elders.
+          Though I wonder, what does it mean?"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1750,72 +1751,17 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 3
         destinationConversationID: 2
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 210
-        y: 170
-        width: 160
-        height: 30
-    - id: 4
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 11
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: '"I wonder, what does it mean?"'
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 4
-        destinationConversationID: 2
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
       - originConversationID: 2
-        originDialogueID: 4
+        originDialogueID: 3
         destinationConversationID: 2
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
       - originConversationID: 2
-        originDialogueID: 4
+        originDialogueID: 3
         destinationConversationID: 2
         destinationDialogueID: 7
         isConnector: 0
@@ -1828,7 +1774,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 220
+        y: 170
         width: 160
         height: 30
     - id: 5
@@ -1850,11 +1796,13 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: '"It was the name of a talented artist."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"It was the name of a talented artist."'
+        value: '"It was the name of a talented artist. They made works of art which
+          inspired generations, touched even those with stony hearts, an irreplacable
+          piece of our culture."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1892,7 +1840,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 270
+        y: 220
         width: 160
         height: 30
     - id: 6
@@ -1914,11 +1862,13 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: '"It was the name of a revered scholar."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"It was the name of a revered scholar."'
+        value: '"It was the name of a revered scholar. They made discoveries that
+          enable our way of life today, not to mention the technology of reaching
+          Anders. Their end however, was most unfortunate."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1955,7 +1905,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 270
+        y: 220
         width: 160
         height: 30
     - id: 7
@@ -1977,11 +1927,14 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: '"It was the name of a mad ruler."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"It was the name of a mad ruler."'
+        value: '"It was the name of a mad ruler. Benevolent at first, yet quickly
+          falling to ruin at the loss of their better half. They became as ruthless
+          and feared as they were motivated to leave their mark on the world. This
+          pursuit, ultimately, destroyed them."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2018,7 +1971,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 270
+        y: 220
         width: 160
         height: 30
     - id: 9
@@ -2074,7 +2027,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 320
+        y: 270
         width: 160
         height: 30
     - id: 10
@@ -2131,7 +2084,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 370
+        y: 320
         width: 160
         height: 30
     - id: 11
@@ -2187,7 +2140,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 420
+        y: 370
         width: 160
         height: 30
     - id: 12
@@ -2243,7 +2196,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 320
+        y: 270
         width: 160
         height: 30
     - id: 13
@@ -2299,7 +2252,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 370
+        y: 320
         width: 160
         height: 30
     - id: 14
@@ -2355,7 +2308,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 420
+        y: 370
         width: 160
         height: 30
     - id: 15
@@ -2411,7 +2364,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 320
+        y: 270
         width: 160
         height: 30
     - id: 16
@@ -2468,7 +2421,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 370
+        y: 320
         width: 160
         height: 30
     - id: 17
@@ -2525,7 +2478,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 420
+        y: 370
         width: 160
         height: 30
     - id: 21
@@ -2581,7 +2534,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 470
+        y: 420
         width: 160
         height: 30
     - id: 22
@@ -2636,7 +2589,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 470
+        y: 420
         width: 160
         height: 30
     - id: 23
@@ -2692,7 +2645,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 470
+        y: 420
         width: 160
         height: 30
     - id: 25
@@ -2719,7 +2672,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: '"We are not disconnected from Anders, we are infatuated by it, and
-          always have been."'
+          always have been. Though our exact reason for this..."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2737,72 +2690,17 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 25
         destinationConversationID: 2
-        destinationDialogueID: 26
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 210
-        y: 520
-        width: 160
-        height: 30
-    - id: 26
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 11
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: '"Though our exact reason for this..."'
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 2
-        originDialogueID: 26
-        destinationConversationID: 2
         destinationDialogueID: 27
         isConnector: 0
         priority: 2
       - originConversationID: 2
-        originDialogueID: 26
+        originDialogueID: 25
         destinationConversationID: 2
         destinationDialogueID: 28
         isConnector: 0
         priority: 2
       - originConversationID: 2
-        originDialogueID: 26
+        originDialogueID: 25
         destinationConversationID: 2
         destinationDialogueID: 29
         isConnector: 0
@@ -2815,7 +2713,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 570
+        y: 470
         width: 160
         height: 30
     - id: 27
@@ -2864,7 +2762,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 620
+        y: 520
         width: 160
         height: 30
     - id: 28
@@ -2913,7 +2811,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 620
+        y: 520
         width: 160
         height: 30
     - id: 29
@@ -2962,12 +2860,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 620
+        y: 520
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 0, y: 22.352936}
+    canvasZoom: 0.85000014
   syncInfo:
     syncActors: 0
     syncItems: 0
