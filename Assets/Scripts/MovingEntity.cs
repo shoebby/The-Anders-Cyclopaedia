@@ -46,9 +46,9 @@ public class MovingEntity : Entity
         Debug.Log(actorName + ": Idle: Enter");
 
         float pickPosTimer = 5f;
-        int randX;
-        int randY;
-        Vector3 pickedPos;
+        //int randX;
+        //int randY;
+        //Vector3 pickedPos;
 
         while (currentState == State.Idle)
         {
