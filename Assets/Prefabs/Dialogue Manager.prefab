@@ -579,7 +579,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 8
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -662,9 +662,9 @@ MonoBehaviour:
   explicitNavigationForTemplateButtons: 1
   loopExplicitNavigation: 0
   autonumber:
-    enabled: 0
+    enabled: 1
     regularNumberHotkeys: 1
-    numpadHotkeys: 0
+    numpadHotkeys: 1
     format: '{0}. {1}'
   blockInputDuration: 0
   showSelectionWhileInputBlocked: 0
