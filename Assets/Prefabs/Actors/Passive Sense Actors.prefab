@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 3153428255908700669}
   - component: {fileID: 1416649833736859970}
   m_Layer: 0
-  m_Name: Alertness
+  m_Name: Curiosity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor: Alertness
+  actor: Curiosity
   persistentDataName: 
   portrait: {fileID: 0}
   spritePortrait: {fileID: 0}
