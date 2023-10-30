@@ -1806,7 +1806,7 @@ MonoBehaviour:
             m_MethodName: PlayAmbience
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgument: {fileID: 8300000, guid: fce290c2823de9a44be5694bd154e043, type: 3}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -3676,7 +3676,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: My name is...
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -3713,8 +3713,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 209.75601}
-    canvasZoom: 0.8200002
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.97
   - id: 3
     fields:
     - title: Title
@@ -10822,8 +10822,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1851.5171, y: 806.71594}
-    canvasZoom: 0.7600007
+    canvasScrollPosition: {x: 1720.4805, y: 309.72223}
+    canvasZoom: 0.6700008
   syncInfo:
     syncActors: 0
     syncItems: 0

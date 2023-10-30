@@ -3676,7 +3676,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: My name is...
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -10822,8 +10822,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.34000093
+    canvasScrollPosition: {x: 1720.4805, y: 309.72223}
+    canvasZoom: 0.6700008
   syncInfo:
     syncActors: 0
     syncItems: 0
