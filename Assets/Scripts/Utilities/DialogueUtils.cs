@@ -15,6 +15,7 @@ public class DialogueUtils : ScriptableObject
         DialogueLua.SetVariable("CheckRoll", roll);
     }
 
+    #region Audio System Functions
     public void PlayAmbience(AudioClip clip)
     {
         AudioSystem.Instance.PlayAmbience(clip);
@@ -36,4 +37,11 @@ public class DialogueUtils : ScriptableObject
     }
 
     public void QuitGame() => Application.Quit();
+    #endregion
+
+    #region Backdrop Canvas Functions
+    public void BackdropChange(Sprite backdropSprite) => BackdropCanvasScript.Instance.ChangeBackdrop(backdropSprite);
+
+    public void BackdropFade() => BackdropCanvasScript.Instance.FadeBackdrop();
+    #endregion
 }

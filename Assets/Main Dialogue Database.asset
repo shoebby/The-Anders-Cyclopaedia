@@ -100,7 +100,7 @@ MonoBehaviour:
     - title: Name
       value: Deduction
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -116,11 +116,15 @@ MonoBehaviour:
     - title: Display Name
       value: DEDUCTION
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#a5338fff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 248e95fbdf10b87409ed0b93a48d1031, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -130,7 +134,7 @@ MonoBehaviour:
     - title: Name
       value: Scholastic
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -146,11 +150,15 @@ MonoBehaviour:
     - title: Display Name
       value: SCHOLASTIC
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#42113cff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 52d6d602ccaf5b544898a5b1f2a9199a, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -180,7 +188,11 @@ MonoBehaviour:
     - title: NodeColor
       value: '#776984ff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 099c2c9088827994faa488bc78d02a5d, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -212,7 +224,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: SenseValue
-      value: 3
+      value: 1
       type: 1
       typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 9881e551314bc2549ac0a467e946b6e3, type: 3}
@@ -224,7 +236,7 @@ MonoBehaviour:
     - title: Name
       value: Curiosity
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -240,11 +252,15 @@ MonoBehaviour:
     - title: Display Name
       value: CURIOSITY
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#687a21ff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: bbd518ca0dbd66f4fbf9d4bd8bb5bcc1, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -254,7 +270,7 @@ MonoBehaviour:
     - title: Name
       value: Pluck
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -262,7 +278,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: IsPlayer
       value: False
       type: 2
@@ -270,11 +286,15 @@ MonoBehaviour:
     - title: Display Name
       value: PLUCK
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#602110ff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 180c60231389b62429d39280fb178d07, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -284,7 +304,7 @@ MonoBehaviour:
     - title: Name
       value: Shivers
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -300,11 +320,15 @@ MonoBehaviour:
     - title: Display Name
       value: SHIVERS
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#1e1f24ff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: b7c2f774cb65a44479961e35ea5ed15c, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -314,7 +338,7 @@ MonoBehaviour:
     - title: Name
       value: Ferocity
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -330,11 +354,15 @@ MonoBehaviour:
     - title: Display Name
       value: FEROCITY
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#84340cff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 97647855a7ce69344900edbc86284862, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -344,7 +372,7 @@ MonoBehaviour:
     - title: Name
       value: Corpus
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -352,7 +380,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: IsPlayer
       value: False
       type: 2
@@ -360,11 +388,15 @@ MonoBehaviour:
     - title: Display Name
       value: CORPUS
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: NodeColor
       value: '#944721ff'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: SenseValue
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 9aa2897f3ef8f5e4897e6518f72af993, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -572,132 +604,6 @@ MonoBehaviour:
       typeString: CustomFieldType_Text
     - title: Initial Value
       value: 0
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 2
-    fields:
-    - title: Name
-      value: DeductionValue
-      type: 0
-      typeString: 
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-  - id: 3
-    fields:
-    - title: Name
-      value: CuriosityValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 4
-    fields:
-    - title: Name
-      value: ScholasticValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 5
-    fields:
-    - title: Name
-      value: DeconstructionValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 6
-    fields:
-    - title: Name
-      value: CommunionValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 7
-    fields:
-    - title: Name
-      value: PluckValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 8
-    fields:
-    - title: Name
-      value: ShiversValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 9
-    fields:
-    - title: Name
-      value: FerocityValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 10
-    fields:
-    - title: Name
-      value: CorpusValue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 1
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
@@ -1779,7 +1685,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 6bb8a19c-71c2-4bc6-b2b6-68a72a5c22c4
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -1863,7 +1769,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 0b0c75db-6999-4a71-826e-91848fa85611
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -1936,7 +1842,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: b00455c7-80d0-4c58-8787-4cbbad26b006
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -1968,7 +1874,31 @@ MonoBehaviour:
         ShowAlert("Your senses sharpen...")'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: 6fb2f90d98f4b17428c74cf39a8055b8, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 60
@@ -2008,7 +1938,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: caad07a4-c32c-421c-bc99-9698402bee30
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -2040,7 +1970,31 @@ MonoBehaviour:
         senses sharpen...")'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: 17beca91f82a8a94da83b0b3495ca25f, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -2081,7 +2035,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 75fc3526-60e6-4d05-8a52-2329444a3f29
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -2113,7 +2067,31 @@ MonoBehaviour:
         senses sharpen...")'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: 17ababcb956d0d345b238d9a9fd158df, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 540
@@ -2826,7 +2804,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: e6f5c599-be38-4dac-bdf2-4e91bc3c176f
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -2865,7 +2843,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 300
@@ -2905,7 +2895,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: c705f7ac-ff36-414d-9ff4-1bb404056b7f
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -2932,7 +2922,31 @@ MonoBehaviour:
         = Variable["CommunionValue"] - 1'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: 49386dbc05b62ba4cb3b96d6a0cb3342, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 30
@@ -2972,7 +2986,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: 3e33ab46-7beb-401b-8147-3cf78ec7d63a
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -2999,7 +3013,31 @@ MonoBehaviour:
         - 1'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: fcd36b7cc4effdb4fa2f916a27d50a03, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 210
@@ -3038,7 +3076,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: cb051e94-1251-4aff-a966-b239c9375a73
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -3065,7 +3103,31 @@ MonoBehaviour:
         - 1'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: 87f653e91cf3c69498cb9197ffeff859, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 390
@@ -3105,7 +3167,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: b532a428-1168-4561-904b-99fb8a6ca234
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -3132,7 +3194,31 @@ MonoBehaviour:
         - 1'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: 368fd4efd61dd184993c4d8c93ecfa92, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 570
@@ -3623,7 +3709,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
-        value: e79e3321-045d-42ce-bbeb-20884f1bf962
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -3642,6 +3728,18 @@ MonoBehaviour:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
             m_MethodName: FadeAmbienceVolume
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -3714,7 +3812,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasZoom: 0.64000034
   - id: 3
     fields:
     - title: Title
@@ -9757,7 +9855,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 104
         destinationConversationID: 3
-        destinationDialogueID: 53
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10822,8 +10920,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1720.4805, y: 309.72223}
-    canvasZoom: 0.6700008
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.46000105
   syncInfo:
     syncActors: 0
     syncItems: 0
