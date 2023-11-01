@@ -154,6 +154,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1652400508}
+  - {fileID: 2002474017}
   - {fileID: 820611895}
   - {fileID: 896801001}
   m_Father: {fileID: 192938249}
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -340,7 +341,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &820611896
 MonoBehaviour:
@@ -473,7 +474,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896801002
 MonoBehaviour:
@@ -869,14 +870,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2002474017}
+  m_Children: []
   m_Father: {fileID: 144062791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1420, y: 175}
+  m_SizeDelta: {x: 0, y: 175}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1652400509
 MonoBehaviour:
@@ -925,7 +925,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 155.6
+  m_fontSize: 110.1
   m_fontSizeBase: 131.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1207,12 +1207,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1652400508}
+  m_Father: {fileID: 144062791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1520, y: 90}
+  m_SizeDelta: {x: 0, y: 90}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2002474018
 MonoBehaviour:
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Playtest Build 01
+  m_text: Playtest Build 0.2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}

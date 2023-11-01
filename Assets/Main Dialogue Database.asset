@@ -35,6 +35,36 @@ MonoBehaviour:
     underline: 0
   baseID: 1
   actors:
+  - id: 1
+    fields:
+    - title: Name
+      value: Player
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: Variable["General.PlayerName"]
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: NodeColor
+      value: '#425158ff'
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 6719f64200160aa4186519543bf3c24d, type: 3}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
   - id: 11
     fields:
     - title: Name
@@ -65,10 +95,10 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
-  - id: 1
+  - id: 20
     fields:
     - title: Name
-      value: Player
+      value: ---------------------------------------
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -80,18 +110,18 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    - title: Display Name
-      value: '[var=PlayerName]'
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: NodeColor
-      value: '#425158ff'
-      type: 0
-      typeString: 
-    portrait: {fileID: 2800000, guid: 6719f64200160aa4186519543bf3c24d, type: 3}
+    - title: EntityDisposition
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: SenseValue
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -106,7 +136,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Applies cold human logic to your surroundings, sees connections.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -140,7 +170,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Digs into your past education, finds snippets that might be of use.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -174,7 +204,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Breaks subjects down to their components, analyses their parts.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -208,7 +238,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Feels what they feel, thinks what they think, wants to understand.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -242,7 +272,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Has an unyielding desire to experiment, finds the line and crosses it.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -276,7 +306,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Remains steadfast, becomes an unyielding force in the face of doubt.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -310,7 +340,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Follows its instinct, makes narrow escapes from danger.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -344,7 +374,7 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Embraces their wild side, lets go of humanity in favour of survival.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -378,7 +408,8 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: 
+      value: Lifts, pushes, and grapples what's in their way, survives the blows
+        of the wild.
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
@@ -398,6 +429,36 @@ MonoBehaviour:
       type: 1
       typeString: CustomFieldType_Number
     portrait: {fileID: 2800000, guid: 9aa2897f3ef8f5e4897e6518f72af993, type: 3}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 19
+    fields:
+    - title: Name
+      value: ---------------------------------------
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: EntityDisposition
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: SenseValue
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -531,6 +592,36 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
+  - id: 18
+    fields:
+    - title: Name
+      value: ---------------------------------------
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: EntityDisposition
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: SenseValue
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
   - id: 17
     fields:
     - title: Name
@@ -571,7 +662,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Name
-      value: Alert
+      value: General.Alert
       type: 0
       typeString: 
     - title: Initial Value
@@ -585,7 +676,7 @@ MonoBehaviour:
   - id: 11
     fields:
     - title: Name
-      value: PlayerName
+      value: General.PlayerName
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -599,7 +690,7 @@ MonoBehaviour:
   - id: 17
     fields:
     - title: Name
-      value: CheckRoll
+      value: General.CheckRoll
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -613,7 +704,7 @@ MonoBehaviour:
   - id: 13
     fields:
     - title: Name
-      value: CanInspectDirt
+      value: Gruntling.CanInspectDirt
       type: 0
       typeString: 
     - title: Initial Value
@@ -627,7 +718,7 @@ MonoBehaviour:
   - id: 15
     fields:
     - title: Name
-      value: HeatedRations
+      value: Gruntling.HeatedRations
       type: 0
       typeString: 
     - title: Initial Value
@@ -641,7 +732,7 @@ MonoBehaviour:
   - id: 16
     fields:
     - title: Name
-      value: HasTouchedHead
+      value: Gruntling.HasTouchedHead
       type: 0
       typeString: 
     - title: Initial Value
@@ -655,11 +746,109 @@ MonoBehaviour:
   - id: 18
     fields:
     - title: Name
-      value: HasLookedIntoEyes
+      value: Gruntling.HasLookedIntoEyes
       type: 0
       typeString: 
     - title: Initial Value
       value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 19
+    fields:
+    - title: Name
+      value: Gruntling.HasTouched
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 20
+    fields:
+    - title: Name
+      value: Gruntling.HasSmelled
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 21
+    fields:
+    - title: Name
+      value: Gruntling.HasTasted
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 22
+    fields:
+    - title: Name
+      value: Gruntling.HasListened
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 23
+    fields:
+    - title: Name
+      value: Gruntling.HasSmelledAgain
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 24
+    fields:
+    - title: Name
+      value: Gruntling.HasObserved
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 25
+    fields:
+    - title: Name
+      value: Gruntling.HasInspectedDirt
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: false
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -850,7 +1039,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: And that something could be us, [var=PlayerName].
+        value: And that something could be us, Variable["General.PlayerName"].
         type: 0
         typeString: 
       - title: Sequence
@@ -1484,7 +1673,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: ShowAlert("My name is [var=PlayerName].")
+      userScript: ShowAlert("My name is Variable["General.PlayerName"].")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1625,7 +1814,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: TextInput(Text Field UI, Name:, PlayerName)
+        value: TextInput(Text Field UI, Name:, General.PlayerName)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2
@@ -1733,7 +1922,7 @@ MonoBehaviour:
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 300
+        x: 298.9011
         y: 70
         width: 160
         height: 30
@@ -1760,8 +1949,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"[var=PlayerName], it''s a fine name we''ve been given by our elders.
-          Though I wonder, what does it mean?"'
+        value: '"[var=General.PlayerName], it''s a fine name we''ve been given by
+          our elders. Though I wonder, what does it mean?"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -3778,7 +3967,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"[var=PlayerName]"'
+        value: '"My name is [var=General.PlayerName]"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -3812,7 +4001,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.64000034
+    canvasZoom: 0.85000014
   - id: 3
     fields:
     - title: Title
@@ -4174,7 +4363,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: Variable["DeconstructionValue"] >= 2
+      conditionsString: Actor["Deconstruction"].SenseValue >= 2
       userScript: ShowAlert("Deconstruction Success")
       onExecute:
         m_PersistentCalls:
@@ -4306,7 +4495,19 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 6
         destinationConversationID: 3
+        destinationDialogueID: 124
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 6
+        destinationConversationID: 3
         destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 6
+        destinationConversationID: 3
+        destinationDialogueID: 135
         isConnector: 0
         priority: 2
       - originConversationID: 3
@@ -4322,7 +4523,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 992.5105
+        x: 991.593
         y: 474.24924
         width: 160
         height: 30
@@ -4345,7 +4546,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: LISTEN
+        value: Listen to the Gruntling.
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -4371,7 +4572,7 @@ MonoBehaviour:
         destinationDialogueID: 105
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Gruntling.HasListened"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4401,7 +4602,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: LOOK
+        value: Observe the Gruntling.
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -4426,16 +4627,23 @@ MonoBehaviour:
         destinationConversationID: 3
         destinationDialogueID: 12
         isConnector: 0
+        priority: 3
+      - originConversationID: 3
+        originDialogueID: 8
+        destinationConversationID: 3
+        destinationDialogueID: 111
+        isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: (Variable["Gruntling.HasInspectedDirt"] == false) or (Variable["Gruntling.HasLookedIntoEyes"]
+        == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 273.5717
-        y: 771.68933
+        x: 468.3083
+        y: 766.37213
         width: 160
         height: 30
     - id: 9
@@ -4457,7 +4665,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: SMELL
+        value: Smell the Gruntling.
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -4482,15 +4690,15 @@ MonoBehaviour:
         destinationDialogueID: 45
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Gruntling.HasSmelled"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1396.1116
-        y: 661.1202
+        x: 1382.4027
+        y: 637.25653
         width: 160
         height: 30
     - id: 10
@@ -4512,7 +4720,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: TASTE
+        value: Taste the Gruntling.
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -4538,15 +4746,15 @@ MonoBehaviour:
         destinationDialogueID: 73
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Gruntling.HasTasted"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 917.5998
-        y: 707.49347
+        x: 895.23145
+        y: 708.80927
         width: 160
         height: 30
     - id: 11
@@ -4568,7 +4776,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: TOUCH
+        value: Touch the Gruntling.
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
@@ -4599,6 +4807,12 @@ MonoBehaviour:
         destinationDialogueID: 21
         isConnector: 0
         priority: 2
+      - originConversationID: 3
+        originDialogueID: 11
+        destinationConversationID: 3
+        destinationDialogueID: 44
+        isConnector: 0
+        priority: 4
       conditionsString: 
       userScript: 
       onExecute:
@@ -4607,7 +4821,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1642.8154
-        y: 57.73889
+        y: 56.36902
         width: 160
         height: 30
     - id: 12
@@ -4656,8 +4870,8 @@ MonoBehaviour:
         destinationDialogueID: 13
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["Gruntling.HasObserved"] == false
+      userScript: Variable["Gruntling.HasObserved"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4774,7 +4988,7 @@ MonoBehaviour:
         destinationDialogueID: 16
         isConnector: 0
         priority: 2
-      conditionsString: Variable["ShiversValue"] >= 1
+      conditionsString: Actor["Shivers"].SenseValue >= 1
       userScript: ShowAlert("Shivers Success")
       onExecute:
         m_PersistentCalls:
@@ -4888,7 +5102,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["CanInspectDirt"] = true
+      userScript: Variable["Gruntling.CanInspectDirt"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4943,7 +5157,7 @@ MonoBehaviour:
         destinationDialogueID: 107
         isConnector: 0
         priority: 2
-      conditionsString: Variable["HasLookedIntoEyes"] == false
+      conditionsString: Variable["Gruntling.HasLookedIntoEyes"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4998,7 +5212,7 @@ MonoBehaviour:
         destinationDialogueID: 119
         isConnector: 0
         priority: 2
-      conditionsString: Variable["CanInspectDirt"] == true
+      conditionsString: Variable["Gruntling.CanInspectDirt"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5109,8 +5323,11 @@ MonoBehaviour:
         destinationDialogueID: 28
         isConnector: 0
         priority: 2
-      conditionsString: Variable["ScholasticValue"] >= 2
-      userScript: ShowAlert("Scholastic Success")
+      conditionsString: Actor["Scholastic"].SenseValue >= 2
+      userScript: 'ShowAlert("Scholastic Success");
+
+        Variable["Gruntling.HasTouched"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5166,7 +5383,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: ShowAlert("Scholastic Failure")
+      userScript: 'ShowAlert("Scholastic Failure");
+
+        Variable["Gruntling.HasTouched"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5425,11 +5645,12 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Kick the Gruntling away.
+        value: '[em1][CORPUS - Simple][/em1] Kick the Gruntling away.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"I kick the Gruntling with considerable force."'
+        value: '[em1][CORPUS - Simple][/em1] "I kick the Gruntling with considerable
+          force."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5449,17 +5670,34 @@ MonoBehaviour:
         destinationConversationID: 3
         destinationDialogueID: 123
         isConnector: 0
+        priority: 3
+      - originConversationID: 3
+        originDialogueID: 26
+        destinationConversationID: 3
+        destinationDialogueID: 139
+        isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Actor["Gruntling"].EntityDisposition = Actor["Gruntling"].EntityDisposition
-        - 3
+      userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: GenerateCheckRoll
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Corpus
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 1868.1082
-        y: 333.72845
+        x: 1864.1608
+        y: 335.04425
         width: 160
         height: 30
     - id: 27
@@ -5729,7 +5967,7 @@ MonoBehaviour:
         destinationDialogueID: 80
         isConnector: 0
         priority: 2
-      conditionsString: Variable["HasTouchedHead"] == false
+      conditionsString: Variable["Gruntling.HasTouchedHead"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5784,7 +6022,7 @@ MonoBehaviour:
         destinationDialogueID: 34
         isConnector: 0
         priority: 2
-      conditionsString: Variable["HeatedRations"] == false
+      conditionsString: Variable["Gruntling.HeatedRations"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5840,7 +6078,7 @@ MonoBehaviour:
         destinationDialogueID: 75
         isConnector: 0
         priority: 2
-      conditionsString: Variable["HeatedRations"] == true
+      conditionsString: Variable["Gruntling.HeatedRations"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6396,7 +6634,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["HeatedRations"] = true
+      userScript: Variable["Gruntling.HeatedRations"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6468,7 +6706,7 @@ MonoBehaviour:
         destinationDialogueID: 19
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Gruntling.HasTouched"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6531,8 +6769,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1396.1116
-        y: 711.1202
+        x: 1381.3389
+        y: 687.25653
         width: 160
         height: 30
     - id: 46
@@ -6586,8 +6824,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1396.1116
-        y: 761.1202
+        x: 1381.3389
+        y: 737.25653
         width: 160
         height: 30
     - id: 47
@@ -6631,18 +6869,18 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 47
         destinationConversationID: 3
-        destinationDialogueID: 19
+        destinationDialogueID: 6
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Gruntling.HasSmelled"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1392.2733
-        y: 815.0949
+        x: 1377.5006
+        y: 791.23126
         width: 160
         height: 30
     - id: 48
@@ -6861,7 +7099,7 @@ MonoBehaviour:
         destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: Variable["ShiversValue"] >= 3
+      conditionsString: Actor["Shivers"].SenseValue >= 3
       userScript: ShowAlert("Shivers Success")
       onExecute:
         m_PersistentCalls:
@@ -6984,7 +7222,7 @@ MonoBehaviour:
             m_CallState: 2
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: LoadScene
+            m_MethodName: BackdropFadeLoadScene
             m_Mode: 5
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -6994,10 +7232,22 @@ MonoBehaviour:
               m_StringArgument: MainMenu
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: StopAllConversations
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 1006.1128
-        y: 581.31714
+        x: 1002.4763
+        y: 584.9535
         width: 160
         height: 30
     - id: 54
@@ -7381,7 +7631,7 @@ MonoBehaviour:
         destinationDialogueID: 63
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PluckValue"] >= 2
+      conditionsString: Actor["Pluck"].SenseValue >= 2
       userScript: ShowAlert("Pluck Success")
       onExecute:
         m_PersistentCalls:
@@ -7776,7 +8026,7 @@ MonoBehaviour:
         destinationDialogueID: 68
         isConnector: 0
         priority: 2
-      conditionsString: Variable["DeductionValue"] >= 1
+      conditionsString: Actor["Deduction"].SenseValue >= 1
       userScript: ShowAlert("Deduction Success")
       onExecute:
         m_PersistentCalls:
@@ -8115,8 +8365,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 917.5998
-        y: 757.49347
+        x: 895.23145
+        y: 758.80927
         width: 160
         height: 30
     - id: 74
@@ -8171,8 +8421,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 915.3271
-        y: 804.08435
+        x: 892.95874
+        y: 805.40015
         width: 160
         height: 30
     - id: 75
@@ -8615,7 +8865,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["HasTouchedHead"] = true
+      userScript: Variable["Gruntling.HasTouchedHead"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9808,8 +10058,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 915.3271
-        y: 854.08435
+        x: 892.95874
+        y: 855.40015
         width: 160
         height: 30
     - id: 104
@@ -9853,18 +10103,24 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 104
         destinationConversationID: 3
+        destinationDialogueID: 128
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 104
+        destinationConversationID: 3
         destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Gruntling.HasTasted"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 915.3271
-        y: 904.08435
+        x: 890.327
+        y: 902.76855
         width: 160
         height: 30
     - id: 105
@@ -10101,7 +10357,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: ShowAlert("Failure - rolled [var=CheckRoll]")
+      userScript: ShowAlert("Failure - rolled [var=General.CheckRoll]")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10156,8 +10412,8 @@ MonoBehaviour:
         destinationDialogueID: 112
         isConnector: 0
         priority: 2
-      conditionsString: Variable["CheckRoll"] >= 4
-      userScript: ShowAlert("Success - rolled [var=CheckRoll]")
+      conditionsString: Variable["General.CheckRoll"] >= 4
+      userScript: ShowAlert("Success - rolled [var=General.CheckRoll]")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10213,7 +10469,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["HasLookedIntoEyes"] = true
+      userScript: Variable["Gruntling.HasLookedIntoEyes"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10286,8 +10542,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 273.5717
-        y: 1071.6895
+        x: 273.57166
+        y: 1071.7434
         width: 160
         height: 30
     - id: 112
@@ -10563,7 +10819,7 @@ MonoBehaviour:
 
         ShowAlert("The Gruntling grows fonder of you");
 
-        Variable["HasLookedIntoEyes"]
+        Variable["Gruntling.HasLookedIntoEyes"]
         = true'
       onExecute:
         m_PersistentCalls:
@@ -10847,8 +11103,8 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'ShowAlert("Gained Item - Jar of Gruntling Dirt");
 
-        Variable["CanInspectDirt"]
-        = false'
+        Variable["Gruntling.HasInspectedDirt"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10907,7 +11163,10 @@ MonoBehaviour:
       userScript: 'Actor["Gruntling"].EntityDisposition = Actor["Gruntling"].EntityDisposition
         + 1;
 
-        ShowAlert("The Gruntling grows fonder of you")'
+        ShowAlert("The Gruntling grows fonder of you");
+
+        Variable["Gruntling.HasListened"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10962,8 +11221,8 @@ MonoBehaviour:
         destinationDialogueID: 48
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["General.CheckRoll"] >= 2
+      userScript: Actor["Gruntling"].EntityDisposition = 0
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10973,9 +11232,1763 @@ MonoBehaviour:
         y: 394.1762
         width: 160
         height: 30
+    - id: 124
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 11
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: Smell the Gruntling (again).
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Disregarding my senses, I get close again. Closer, even. I bury
+          my nose in the Gruntling''s fur and..."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 124
+        destinationConversationID: 3
+        destinationDialogueID: 125
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["Gruntling.HasSmelled"] == true and (Variable["Gruntling.HasSmelledAgain"]
+        == false)
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1346.0818
+        y: 347.46365
+        width: 160
+        height: 30
+    - id: 125
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 14
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"This is... Too much... I''m getting..."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 125
+        destinationConversationID: 3
+        destinationDialogueID: 126
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1346.0818
+        y: 397.46365
+        width: 160
+        height: 30
+    - id: 126
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Never before did I think a smell could hurt."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 126
+        destinationConversationID: 3
+        destinationDialogueID: 127
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1346.0818
+        y: 447.46365
+        width: 160
+        height: 30
+    - id: 127
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 14
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"I can''t take this, I''m shutting myself off. I''ll come back when
+          we''re far, far away from this beast."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 127
+        destinationConversationID: 3
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["Gruntling.HasSmelledAgain"] = true
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1346.0818
+        y: 495.26346
+        width: 160
+        height: 30
+    - id: 128
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: Lick the Gruntling.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Without moving the Gruntling itself, I get in close and lick its
+          fur."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 128
+        destinationConversationID: 3
+        destinationDialogueID: 129
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 955.40015
+        width: 160
+        height: 30
+    - id: 129
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 16
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"This texture gives us a horrible sensation."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 129
+        destinationConversationID: 3
+        destinationDialogueID: 130
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 1005.40015
+        width: 160
+        height: 30
+    - id: 130
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 16
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 16
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"More dirt, more smoke, what''s the point of it?"'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 130
+        destinationConversationID: 3
+        destinationDialogueID: 131
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 1055.4001
+        width: 160
+        height: 30
+    - id: 131
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: The Gruntling chirps softly. It removes its snout to look at you for
+          a moment.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 131
+        destinationConversationID: 3
+        destinationDialogueID: 132
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 1105.4001
+        width: 160
+        height: 30
+    - id: 132
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Is this how they show eachother affection? A bonding ritual?"'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 132
+        destinationConversationID: 3
+        destinationDialogueID: 133
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 1155.4001
+        width: 160
+        height: 30
+    - id: 133
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 9
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Closeness on this level, without lashing out, it can only be that."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 133
+        destinationConversationID: 3
+        destinationDialogueID: 134
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 1205.4001
+        width: 160
+        height: 30
+    - id: 134
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: The Gruntling  squeezes its eyes shut for a moment and looks at you
+          again. This is trust, affection, understanding... It resumes its rooting
+          through the dirt.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 134
+        destinationConversationID: 3
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 'Actor["Gruntling"].EntityDisposition = Actor["Gruntling"].EntityDisposition
+        + 1;
+
+        ShowAlert("The Gruntling grows fonder of you")'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 892.95874
+        y: 1255.4001
+        width: 160
+        height: 30
+    - id: 135
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 11
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: Speak with the Gruntling
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"I feel close to this being, close enough... To speak with it?"'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 135
+        destinationConversationID: 3
+        destinationDialogueID: 136
+        isConnector: 0
+        priority: 2
+      conditionsString: Actor["Gruntling"].EntityDisposition == 4
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: SwitchAmbience
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: b400959360111e844ae5a45247d42bc0, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      canvasRect:
+        serializedVersion: 2
+        x: 990.68787
+        y: 388.07114
+        width: 160
+        height: 30
+    - id: 136
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"The rules of nature are different than where you come from, aren''t
+          they?"'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 136
+        destinationConversationID: 3
+        destinationDialogueID: 137
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 136
+        destinationConversationID: 3
+        destinationDialogueID: 138
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 987.0924
+        y: 314.35208
+        width: 160
+        height: 30
+    - id: 137
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Greatly. I wouldn''t be able to talk with you there."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 137
+        destinationConversationID: 3
+        destinationDialogueID: 151
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 888.0194
+        y: 248.32816
+        width: 160
+        height: 30
+    - id: 138
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Different is an understatement."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 138
+        destinationConversationID: 3
+        destinationDialogueID: 153
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1068.7451
+        y: 249.6677
+        width: 160
+        height: 30
+    - id: 139
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 11
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Revving up a mighty kick, we swing..."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 139
+        destinationConversationID: 3
+        destinationDialogueID: 140
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1665.6854
+        y: 396.58185
+        width: 160
+        height: 30
+    - id: 140
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"And we miss. Flat on our back in a heartbeat. Our fall scares off
+          the Gruntling too."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 140
+        destinationConversationID: 3
+        destinationDialogueID: 142
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1665.6854
+        y: 446.58185
+        width: 160
+        height: 30
+    - id: 141
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"To wallow in our embarrassment."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 141
+        destinationConversationID: 3
+        destinationDialogueID: 143
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 141
+        destinationConversationID: 3
+        destinationDialogueID: 53
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1619.9891
+        y: 556.2289
+        width: 160
+        height: 30
+    - id: 142
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Now we are completely alone..."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 142
+        destinationConversationID: 3
+        destinationDialogueID: 141
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1665.6854
+        y: 496.58185
+        width: 160
+        height: 30
+    - id: 143
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: Remain on the forest floor, just a bit longer.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"I want to remain on the forest floor, for just a bit longer."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 143
+        destinationConversationID: 3
+        destinationDialogueID: 144
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1575.26
+        y: 611.4754
+        width: 160
+        height: 30
+    - id: 144
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 14
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Without the Gruntling I can smell the forest again. It''s sweet,
+          fresh, pleasant and uninvasive."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 144
+        destinationConversationID: 3
+        destinationDialogueID: 145
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1575.26
+        y: 661.4754
+        width: 160
+        height: 30
+    - id: 145
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"The dirt is coarse in some places, soft in others. It feels different
+          than home, somehow."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 145
+        destinationConversationID: 3
+        destinationDialogueID: 146
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1575.26
+        y: 711.4754
+        width: 160
+        height: 30
+    - id: 146
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Must be the gravitational pull. It''s slightly higher here, around
+          twice that of earth."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 146
+        destinationConversationID: 3
+        destinationDialogueID: 147
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1575.26
+        y: 761.4754
+        width: 160
+        height: 30
+    - id: 147
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Still, had to train a lot to be able to handle that. Even then,
+          the exoskeletal lining of our suit is definitely helping us."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 147
+        destinationConversationID: 3
+        destinationDialogueID: 148
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 147
+        destinationConversationID: 3
+        destinationDialogueID: 149
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1575.26
+        y: 811.4754
+        width: 160
+        height: 30
+    - id: 148
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: '"I like it here."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"I like it here."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 148
+        destinationConversationID: 3
+        destinationDialogueID: 150
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1438.1467
+        y: 866.81854
+        width: 160
+        height: 30
+    - id: 149
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: '"I don''t like it here."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"I don''t like it here."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 149
+        destinationConversationID: 3
+        destinationDialogueID: 150
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1613.4044
+        y: 867.6611
+        width: 160
+        height: 30
+    - id: 150
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Get up, we''ve got work to do."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 150
+        destinationConversationID: 3
+        destinationDialogueID: 53
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1519.854
+        y: 933.8917
+        width: 160
+        height: 30
+    - id: 151
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '*squeak* "Ah, thats sad..."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 151
+        destinationConversationID: 3
+        destinationDialogueID: 152
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 888.01953
+        y: 189.23734
+        width: 160
+        height: 30
+    - id: 152
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Agreed..."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 152
+        destinationConversationID: 3
+        destinationDialogueID: 153
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 891.4286
+        y: 130.14653
+        width: 160
+        height: 30
+    - id: 153
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 17
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"Thanks for talking with me, but I''ve gotta eat now. Maybe we''ll
+          meet again!" The Grunting resumes its rooting, and the connection slowly
+          fades.'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 153
+        destinationConversationID: 3
+        destinationDialogueID: 154
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1073.2468
+        y: 63.10118
+        width: 160
+        height: 30
+    - id: 154
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 9
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"The barrier between us and the wild seems to have repaired itself,
+          what a shame."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 154
+        destinationConversationID: 3
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1243.7012
+        y: 188.1011
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1797.2562, y: 582.24457}
-    canvasZoom: 0.73000085
+    canvasScrollPosition: {x: 1193.4191, y: 2.6315308}
+    canvasZoom: 0.76000094
   syncInfo:
     syncActors: 0
     syncItems: 0

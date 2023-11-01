@@ -12,13 +12,34 @@ public class DialogueUtils : ScriptableObject
         int roll = Random.Range(1, 6);
         Debug.Log("Rolled " + roll + " + " + senseValue);
         roll += senseValue;
-        DialogueLua.SetVariable("CheckRoll", roll);
+        DialogueLua.SetVariable("General.CheckRoll", roll);
     }
 
-    #region Audio System Functions
+    public void StopAllConversations()
+    {
+        for (int i = DialogueManager.instance.activeConversations.Count - 1; i >= 0; i--)
+        {
+            DialogueManager.instance.activeConversations[i].conversationController.Close();
+        }
+    }
+
+    #region Scene Management
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+    public void QuitGame() => Application.Quit();
+    #endregion
+
+    #region Audio System
     public void PlayAmbience(AudioClip clip)
     {
         AudioSystem.Instance.PlayAmbience(clip);
+    }
+
+    public void SwitchAmbience(AudioClip clip)
+    {
+        AudioSystem.Instance.SwitchAmbience(clip);
     }
 
     public void FadeAmbienceVolume()
@@ -30,18 +51,13 @@ public class DialogueUtils : ScriptableObject
     {
         AudioSystem.Instance.PlayAClip(clip);
     }
-
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
-    public void QuitGame() => Application.Quit();
     #endregion
 
-    #region Backdrop Canvas Functions
+    #region Backdrop Canvas
     public void BackdropChange(Sprite backdropSprite) => BackdropCanvasScript.Instance.ChangeBackdrop(backdropSprite);
 
-    public void BackdropFade() => BackdropCanvasScript.Instance.FadeBackdrop();
+    public void BackdropFade() => BackdropCanvasScript.Instance.FadeBackdrop(null);
+
+    public void BackdropFadeLoadScene(string sceneName) => BackdropCanvasScript.Instance.FadeBackdrop(sceneName);
     #endregion
 }

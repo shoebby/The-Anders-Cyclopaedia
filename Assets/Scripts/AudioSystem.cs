@@ -13,19 +13,29 @@ public class AudioSystem : Singleton<AudioSystem>
         ambientSource.Play();
     }
 
+    public void SwitchAmbience(AudioClip clip)
+    {
+        StartCoroutine(Fade(clip));
+    }
+
     public void PlayAClip(AudioClip clip) => soundsSource.PlayOneShot(clip);
 
     public void FadeAmbienceVolume()
     {
-        StartCoroutine(Fade());
+        StartCoroutine(Fade(null));
     }
 
-    private IEnumerator Fade()
+    public float GetAmbienceVolume()
+    {
+        return ambientSource.volume;
+    }
+
+    private IEnumerator Fade(AudioClip crossfadeClip)
     {
         float targetVolume = 0f;
         float initialVolume = ambientSource.volume;
         float elapsedTime = 0f;
-        float fadeDuration = 2f;
+        float fadeDuration = 3f;
 
         if (initialVolume > 0f)
             targetVolume = 0f;
@@ -37,6 +47,14 @@ public class AudioSystem : Singleton<AudioSystem>
             elapsedTime += Time.deltaTime;
             ambientSource.volume = Mathf.Lerp(initialVolume, targetVolume, elapsedTime / fadeDuration);
             yield return null;
+        }
+
+        if (crossfadeClip != null)
+        {
+            ambientSource.clip = crossfadeClip;
+            ambientSource.Play();
+
+            StartCoroutine(Fade(null));
         }
     }
 }

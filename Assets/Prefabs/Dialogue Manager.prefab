@@ -1278,7 +1278,7 @@ MonoBehaviour:
       - Fire1
       - Fire2
       cancel:
-        key: 0
+        key: 13
         buttonName: 
       cancelConversation:
         key: 0

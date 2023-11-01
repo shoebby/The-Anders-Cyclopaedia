@@ -267,7 +267,7 @@ MonoBehaviour:
   - id: 0
     fields:
     - title: Name
-      value: Alert
+      value: General.Alert
       type: 0
       typeString: 
     - title: Initial Value
@@ -915,7 +915,7 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'SetQuestState("Get the Launch Codes", "active");
 
-        Variable["Alert"]
+        Variable["General.Alert"]
         = "Mission: Get the Launch Codes"'
       onExecute:
         m_PersistentCalls:
@@ -1503,7 +1503,7 @@ MonoBehaviour:
       conditionsString: Variable["enemiesKilled"] < 5
       userScript: 'SetQuestState("Enemy Attack", "active");
 
-        Variable["Alert"]
+        Variable["General.Alert"]
         = "Objective: Kill 5 Enemies"'
       onExecute:
         m_PersistentCalls:
@@ -2526,7 +2526,7 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'SetQuestState("Get the Launch Codes", "success");
 
-        Variable["Alert"]
+        Variable["General.Alert"]
         = "Mission Complete: Launch Codes Acquired"'
       onExecute:
         m_PersistentCalls:
