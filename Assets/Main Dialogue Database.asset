@@ -8510,7 +8510,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Lets do it."'
+        value: '"Yes, lets do it."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -12987,7 +12987,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 705.2618, y: 0}
+    canvasScrollPosition: {x: 1845.2172, y: 456.42847}
     canvasZoom: 0.76000094
   syncInfo:
     syncActors: 0

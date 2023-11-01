@@ -827,6 +827,34 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 24
+    fields:
+    - title: Name
+      value: Gruntling.HasObserved
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 25
+    fields:
+    - title: Name
+      value: Gruntling.HasInspectedDirt
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: false
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -4488,12 +4516,6 @@ MonoBehaviour:
         destinationDialogueID: 53
         isConnector: 0
         priority: 2
-      - originConversationID: 3
-        originDialogueID: 6
-        destinationConversationID: 3
-        destinationDialogueID: 111
-        isConnector: 0
-        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -4605,8 +4627,14 @@ MonoBehaviour:
         destinationConversationID: 3
         destinationDialogueID: 12
         isConnector: 0
+        priority: 3
+      - originConversationID: 3
+        originDialogueID: 8
+        destinationConversationID: 3
+        destinationDialogueID: 111
+        isConnector: 0
         priority: 2
-      conditionsString: (Variable["Gruntling.CanInspectDirt"] == true) or (Variable["Gruntling.HasLookedIntoEyes"]
+      conditionsString: (Variable["Gruntling.HasInspectedDirt"] == false) or (Variable["Gruntling.HasLookedIntoEyes"]
         == false)
       userScript: 
       onExecute:
@@ -4614,8 +4642,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 273.5717
-        y: 770.31946
+        x: 468.3083
+        y: 766.37213
         width: 160
         height: 30
     - id: 9
@@ -4842,8 +4870,8 @@ MonoBehaviour:
         destinationDialogueID: 13
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["Gruntling.HasObserved"] == false
+      userScript: Variable["Gruntling.HasObserved"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8482,7 +8510,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Lets do it."'
+        value: '"Yes, lets do it."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -10515,7 +10543,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 273.57166
-        y: 1073.0593
+        y: 1071.7434
         width: 160
         height: 30
     - id: 112
@@ -11075,8 +11103,8 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'ShowAlert("Gained Item - Jar of Gruntling Dirt");
 
-        Variable["Gruntling.CanInspectDirt"]
-        = false'
+        Variable["Gruntling.HasInspectedDirt"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12959,7 +12987,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1159.2095, y: 0}
+    canvasScrollPosition: {x: 1845.2172, y: 456.42847}
     canvasZoom: 0.76000094
   syncInfo:
     syncActors: 0
