@@ -5116,8 +5116,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2218.292
-        y: 63.704834
+        x: 2228.8184
+        y: 56.2631
         width: 160
         height: 30
     - id: 21
@@ -5402,8 +5402,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2054.1113
-        y: 330.11584
+        x: 2070.5293
+        y: 336.08597
         width: 160
         height: 30
     - id: 26
@@ -5429,8 +5429,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"With a mighty kick the Gruntling rolls over the forest ground, finally
-          showing some activity it scampers away."'
+        value: '"I kick the Gruntling with considerable force."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5448,7 +5447,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 26
         destinationConversationID: 3
-        destinationDialogueID: 48
+        destinationDialogueID: 123
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5459,8 +5458,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1891.9888
-        y: 397.90747
+        x: 1868.1082
+        y: 333.72845
         width: 160
         height: 30
     - id: 27
@@ -5793,7 +5792,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 2201.9585
-        y: 676.38306
+        y: 675.11725
         width: 160
         height: 30
     - id: 33
@@ -6125,7 +6124,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2201.9585
+        x: 2200.6926
         y: 926.38257
         width: 160
         height: 30
@@ -6374,9 +6373,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u201CJust don\u2019t do it again alright? But this finding might
-          actually be quite valuable, what would make this creature emit such amounts
-          of radiation?\u201D"
+        value: "\u201CJust... Don\u2019t do it again. But this finding might actually
+          be quite valuable, what would make this creature emit such amounts of radiation?\u201D"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -6404,8 +6402,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2201.9585
-        y: 1176.3835
+        x: 2200.6929
+        y: 1175.1177
         width: 160
         height: 30
     - id: 44
@@ -6643,7 +6641,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1393.4928
+        x: 1392.2733
         y: 815.0949
         width: 160
         height: 30
@@ -6998,8 +6996,8 @@ MonoBehaviour:
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 997.54126
-        y: 579.88855
+        x: 1006.1128
+        y: 581.31714
         width: 160
         height: 30
     - id: 54
@@ -7556,7 +7554,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1630.7238
+        x: 1631.9896
         y: 1055.9563
         width: 160
         height: 30
@@ -7966,7 +7964,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 5
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -8022,7 +8020,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 5
+        value: 11
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -8683,7 +8681,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 2376.3481
-        y: 783.5593
+        y: 782.2935
         width: 160
         height: 30
     - id: 84
@@ -9098,7 +9096,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 7
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -9490,7 +9488,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 6
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -9726,8 +9724,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"That''s something for [var=PlayerName] to decide on, but for now
-          lets note it down and continue on."'
+        value: '"That''s something for us to decide on later, but for now lets note
+          it down and continue on. There''s much more to explore."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -10919,9 +10917,65 @@ MonoBehaviour:
         y: 482.1227
         width: 160
         height: 30
+    - id: 123
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 11
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"With a mighty kick the Gruntling rolls over the forest ground, away
+          from us. It finally shows some activity when it scampers away."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 123
+        destinationConversationID: 3
+        destinationDialogueID: 48
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1875.5708
+        y: 394.1762
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.46000105
+    canvasScrollPosition: {x: 1797.2562, y: 582.24457}
+    canvasZoom: 0.73000085
   syncInfo:
     syncActors: 0
     syncItems: 0
