@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrbitCamera : MonoBehaviour
+public class OrbitCamera : Singleton<OrbitCamera>
 {
     [SerializeField]
     Transform focus = default;
@@ -39,6 +39,8 @@ public class OrbitCamera : MonoBehaviour
 
     [SerializeField] LayerMask obstructionMask = -1;
 
+    public bool disabledCameraMovement = false;
+
     Vector3 focusPoint, previousFocusPoint;
     Vector2 orbitAngles = new Vector2(45f, 0f);
 
@@ -59,12 +61,13 @@ public class OrbitCamera : MonoBehaviour
 
     void Awake()
     {
+        base.Awake();
+
         regularCamera = GetComponent<Camera>();
         focusPoint = focus.position;
         transform.localRotation = orbitRotation = Quaternion.Euler(orbitAngles);
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Helpers.ToggleCursorLock();
     }
 
     private void Update()
@@ -137,10 +140,14 @@ public class OrbitCamera : MonoBehaviour
 
     bool ManualRotation()
     {
+        if (disabledCameraMovement)
+            return false;
+
         Vector2 input = new Vector2(
             Input.GetAxis("Mouse Y"),
             Input.GetAxis("Mouse X")
-        );
+            );
+
         const float e = 0.001f;
         if (input.x < -e || input.x > e || input.y < -e || input.y > e)
         {

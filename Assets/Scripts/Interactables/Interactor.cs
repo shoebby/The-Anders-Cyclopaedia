@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Interactor : MonoBehaviour
+public class Interactor : Singleton<Interactor>
 {
     [SerializeField] private Transform interactionPoint;
     [SerializeField] private float interactionPointRadius = 0.5f;
@@ -11,11 +11,21 @@ public class Interactor : MonoBehaviour
     [SerializeField] private KeyCode interactKey = KeyCode.Mouse0;
     private readonly Collider[] colliders = new Collider[3]; //can be raised if there are more interactables in a single scene
     [SerializeField] private int numFound;
+    public bool canInteract = true;
 
     private IInteractable interactable;
 
     private void Update()
     {
+        if (!canInteract)
+        {
+            interactable = null;
+            if (InteractionPromptUI.Instance.isDisplayed)
+                InteractionPromptUI.Instance.Close();
+            return;
+        }
+            
+
         numFound = Physics.OverlapSphereNonAlloc(interactionPoint.position, interactionPointRadius, colliders, interactibleMask);
 
         if (numFound > 0)

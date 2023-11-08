@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class PlayerMovement : Subject
+public class PlayerMovement : Singleton<PlayerMovement>
 {
     //Serialized Variables
     [Header("General Movement Controls")]
@@ -25,6 +25,12 @@ public class PlayerMovement : Subject
 
     [SerializeField, Range(0f, 90f)]
     float maxGroundAngle = 25f, maxStairsAngle = 50f;
+
+    [SerializeField]
+    private Vector3 standardGravity = new Vector3(0f, -9.8f, 0f), fallingGravity = new Vector3(0f, -12f, 0f);
+
+    [SerializeField]
+    private float FallingThreshold = 0.1f;
 
     [Header("Camera Controls")]
     [SerializeField, Range(0f, 100f)]
@@ -60,6 +66,8 @@ public class PlayerMovement : Subject
 
     [SerializeField] Material normalMaterial = default, climbingMaterial = default, swimmingMaterial = default;
 
+    public bool disabledPlayerMovement = false;
+
     MeshRenderer meshRenderer;
 
     //Movement Variables
@@ -91,6 +99,8 @@ public class PlayerMovement : Subject
 
     private void Awake()
     {
+        base.Awake();
+
         rb = GetComponent<Rigidbody>();
         meshRenderer = GetComponentInChildren<MeshRenderer>();
         OnValidate();
@@ -98,6 +108,9 @@ public class PlayerMovement : Subject
 
     private void Update()
     {
+        if (disabledPlayerMovement)
+            return;
+
         playerInput.x = Input.GetAxis("Horizontal");
         playerInput.y = Input.GetAxis("Vertical");
         playerInput.z = Swimming ? Input.GetAxis("UpDown") : 0f;
@@ -173,13 +186,21 @@ public class PlayerMovement : Subject
                 (Vector3.Dot(Physics.gravity, contactNormal) * Time.deltaTime);
         }
 
-        rb.velocity = velocity;
+        if (!disabledPlayerMovement)
+            rb.velocity = velocity;
+        else if (disabledPlayerMovement)
+            rb.velocity = Vector3.zero;
 
         if (velocity.magnitude > .01)
         {
             playerModel.rotation = Quaternion.LookRotation(velocity, Vector3.up);
             playerModel.eulerAngles = new Vector3(0f, playerModel.eulerAngles.y, 0f);
         }
+
+        if (!onGround && rb.velocity.y < FallingThreshold)
+            Physics.gravity = fallingGravity;
+        else if (onGround)
+            Physics.gravity = standardGravity;
 
         ClearState();
     }

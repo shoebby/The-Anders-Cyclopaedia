@@ -60,4 +60,11 @@ public class DialogueUtils : ScriptableObject
 
     public void BackdropFadeLoadScene(string sceneName) => BackdropCanvasScript.Instance.FadeBackdrop(sceneName);
     #endregion
+
+    public void ToggleOverworldAbilities()
+    {
+        Helpers.ToggleCursorLock();
+        Helpers.ToggleMovements();
+        Helpers.ToggleInteractor();
+    }
 }

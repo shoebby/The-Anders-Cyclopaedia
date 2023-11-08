@@ -4196,6 +4196,42 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: ebf7fd78b8bcdb645a6178a9b206a7bc, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: ToggleOverworldAbilities
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 390
@@ -7222,8 +7258,8 @@ MonoBehaviour:
             m_CallState: 2
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: BackdropFadeLoadScene
-            m_Mode: 5
+            m_MethodName: BackdropFade
+            m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7235,6 +7271,18 @@ MonoBehaviour:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
             m_MethodName: StopAllConversations
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: ToggleOverworldAbilities
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -11644,8 +11692,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: The Gruntling chirps softly. It removes its snout to look at you for
-          a moment.
+        value: The Gruntling chirps softly. It removes its snout from the dirt to
+          look at you, just for a moment.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -12987,8 +13035,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1845.2172, y: 456.42847}
-    canvasZoom: 0.76000094
+    canvasScrollPosition: {x: 439.55908, y: 656.46985}
+    canvasZoom: 0.85000086
   syncInfo:
     syncActors: 0
     syncItems: 0
