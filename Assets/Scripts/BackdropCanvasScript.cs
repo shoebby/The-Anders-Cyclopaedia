@@ -10,7 +10,7 @@ public class BackdropCanvasScript : Singleton<BackdropCanvasScript>
     private void Start()
     {
         //start backdrop as transparent
-        backdropImage.color = new Color(1f, 1f, 1f, 0f);
+        //backdropImage.color = new Color(1f, 1f, 1f, 0f);
     }
 
     public void ChangeBackdrop(Sprite sprite)

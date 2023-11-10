@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 144062791}
   - component: {fileID: 144062792}
-  - component: {fileID: 144062793}
   m_Layer: 5
   m_Name: Group
   m_TagString: Untagged
@@ -190,18 +189,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &144062793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144062790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c10c12c1fd88114f9e46c07e6334a95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &192938245
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +383,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DialogueCentricTestScene
+          m_StringArgument: SampleScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &820611897
@@ -925,7 +912,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110.1
+  m_fontSize: 205
   m_fontSizeBase: 131.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1234,7 +1221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Playtest Build 0.2
+  m_text: Playtest Build 0.3 - Movement Update
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
