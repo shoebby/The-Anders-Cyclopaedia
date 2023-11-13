@@ -66,5 +66,7 @@ public class DialogueUtils : ScriptableObject
         Helpers.ToggleCursorLock();
         Helpers.ToggleMovements();
         Helpers.ToggleInteractor();
+
+        Interactor.Instance.isEngaged = !Interactor.Instance.isEngaged;
     }
 }

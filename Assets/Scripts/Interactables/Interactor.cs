@@ -12,6 +12,7 @@ public class Interactor : Singleton<Interactor>
     private readonly Collider[] colliders = new Collider[3]; //can be raised if there are more interactables in a single scene
     [SerializeField] private int numFound;
     public bool canInteract = true;
+    public bool isEngaged = false;
 
     private IInteractable interactable;
 
