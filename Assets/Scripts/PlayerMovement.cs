@@ -27,10 +27,10 @@ public class PlayerMovement : Singleton<PlayerMovement>
     float maxGroundAngle = 25f, maxStairsAngle = 50f;
 
     [SerializeField]
-    private Vector3 standardGravity = new Vector3(0f, -9.8f, 0f), fallingGravity = new Vector3(0f, -12f, 0f);
+    public Vector3 standardGravity = new Vector3(0f, -9.8f, 0f), fallingGravity = new Vector3(0f, -12f, 0f);
 
     [SerializeField]
-    private float FallingThreshold = 0.1f;
+    public float FallingThreshold = 0.1f;
 
     [Header("Camera Controls")]
     [SerializeField, Range(0f, 100f)]
@@ -66,13 +66,15 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     [SerializeField] Material normalMaterial = default, climbingMaterial = default, swimmingMaterial = default;
 
+    [SerializeField] Animator playerAnimator = default;
+
     public bool disabledPlayerMovement = false;
 
-    MeshRenderer meshRenderer;
+    SkinnedMeshRenderer skinnedMeshRenderer;
 
     //Movement Variables
-    private Vector3 playerInput;
-    private Vector3 velocity, connectionVelocity;
+    [HideInInspector] public Vector3 playerInput;
+    [HideInInspector] public Vector3 velocity, connectionVelocity;
     private Vector3 contactNormal, steepNormal, climbNormal, lastClimbNormal;
     private Vector3 upAxis, rightAxis, forwardAxis;
     private Rigidbody rb, connectedRb, previousConnectedRb;
@@ -102,8 +104,9 @@ public class PlayerMovement : Singleton<PlayerMovement>
         base.Awake();
 
         rb = GetComponent<Rigidbody>();
-        meshRenderer = GetComponentInChildren<MeshRenderer>();
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         OnValidate();
+        playerAnimator.Play("Idle");
     }
 
     private void Update()
@@ -137,11 +140,18 @@ public class PlayerMovement : Singleton<PlayerMovement>
             desiresClimbing = Input.GetKey(climbKey);
         }
 
-        meshRenderer.material = Climbing ? climbingMaterial : Swimming ? swimmingMaterial : normalMaterial;
+        skinnedMeshRenderer.material = Climbing ? climbingMaterial : Swimming ? swimmingMaterial : normalMaterial;
     }
 
     private void FixedUpdate()
     {
+        if (!onGround && rb.velocity.y < FallingThreshold)
+        {
+            Physics.gravity = fallingGravity;
+        }
+        else if (onGround)
+            Physics.gravity = standardGravity;
+
         upAxis = -Physics.gravity.normalized;
 
         UpdateState();
@@ -196,11 +206,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
             playerModel.rotation = Quaternion.LookRotation(velocity, Vector3.up);
             playerModel.eulerAngles = new Vector3(0f, playerModel.eulerAngles.y, 0f);
         }
-
-        if (!onGround && rb.velocity.y < FallingThreshold)
-            Physics.gravity = fallingGravity;
-        else if (onGround)
-            Physics.gravity = standardGravity;
 
         ClearState();
     }
@@ -299,11 +304,11 @@ public class PlayerMovement : Singleton<PlayerMovement>
         velocity += jumpDirection * jumpSpeed;
     }
 
-    bool Climbing => climbContactCount > 0 && stepsSinceLastJump > 2;
-    private bool onGround => groundContactCount > 0;
+    public bool Climbing => climbContactCount > 0 && stepsSinceLastJump > 2;
+    public bool onGround => groundContactCount > 0;
     bool OnSteep => steepContactCount > 0;
-    bool InWater => submergence > 0f;
-    bool Swimming => submergence >= swimThreshold;
+    public bool InWater => submergence > 0f;
+    public bool Swimming => submergence >= swimThreshold;
 
     void OnTriggerEnter(Collider other)
     {

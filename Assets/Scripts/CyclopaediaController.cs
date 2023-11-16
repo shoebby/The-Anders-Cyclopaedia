@@ -5,7 +5,7 @@ public class CyclopaediaController : MonoBehaviour
 {
     [SerializeField] private KeyCode toggleKey, flipLeftKey, flipRightKey;
 
-    [SerializeField] private AudioClip toggleClip, flipPageClip;
+    [SerializeField] private AudioClip openBookClip, closeBookClip, flipPageClip;
 
     [SerializeField] private GameObject bookPanel;
 
@@ -53,8 +53,12 @@ public class CyclopaediaController : MonoBehaviour
 
     private void ToggleCyclopaedia()
     {
+        if (!bookPanel.activeSelf)
+            AudioSystem.Instance.PlayAClip(openBookClip);
+        else if (bookPanel.activeSelf)
+            AudioSystem.Instance.PlayAClip(closeBookClip);
+
         bookPanel.SetActive(!bookPanel.activeSelf);
-        AudioSystem.Instance.PlayAClip(toggleClip);
 
         if (!Interactor.Instance.isEngaged)
         {
