@@ -140,7 +140,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
             desiresClimbing = Input.GetKey(climbKey);
         }
 
-        skinnedMeshRenderer.material = Climbing ? climbingMaterial : Swimming ? swimmingMaterial : normalMaterial;
+        //skinnedMeshRenderer.material = Climbing ? climbingMaterial : Swimming ? swimmingMaterial : normalMaterial;
     }
 
     private void FixedUpdate()
