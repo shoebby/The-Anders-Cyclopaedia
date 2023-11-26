@@ -64,13 +64,9 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     [SerializeField] Transform playerInputSpace = default, playerModel = default;
 
-    [SerializeField] Material normalMaterial = default, climbingMaterial = default, swimmingMaterial = default;
-
     [SerializeField] Animator playerAnimator = default;
 
     public bool disabledPlayerMovement = false;
-
-    SkinnedMeshRenderer skinnedMeshRenderer;
 
     //Movement Variables
     [HideInInspector] public Vector3 playerInput;
@@ -103,8 +99,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
     {
         base.Awake();
 
+        playerInputSpace = Camera.main.transform;
         rb = GetComponent<Rigidbody>();
-        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         OnValidate();
         playerAnimator.Play("Idle");
     }
@@ -139,8 +135,6 @@ public class PlayerMovement : Singleton<PlayerMovement>
             desiredJump |= Input.GetKeyDown(jumpKey);
             desiresClimbing = Input.GetKey(climbKey);
         }
-
-        //skinnedMeshRenderer.material = Climbing ? climbingMaterial : Swimming ? swimmingMaterial : normalMaterial;
     }
 
     private void FixedUpdate()
@@ -201,7 +195,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
         else if (disabledPlayerMovement)
             rb.velocity = Vector3.zero;
 
-        if (velocity.magnitude > .01)
+        if (velocity.magnitude > .05)
         {
             playerModel.rotation = Quaternion.LookRotation(velocity, Vector3.up);
             playerModel.eulerAngles = new Vector3(0f, playerModel.eulerAngles.y, 0f);

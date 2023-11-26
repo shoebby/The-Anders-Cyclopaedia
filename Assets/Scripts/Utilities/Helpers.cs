@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Static class for generally helpful methods
 public static class Helpers
 {
+    public static string previousScene;
+
     public static void DestroyChildren(this Transform t)
     {
         foreach (Transform child in t) Object.Destroy(child.gameObject);
@@ -27,5 +30,20 @@ public static class Helpers
     public static void ToggleInteractor()
     {
         Interactor.Instance.canInteract = !Interactor.Instance.canInteract;
+    }
+
+    public static void StorePreviousScene()
+    {
+        previousScene = SceneManager.GetActiveScene().name;
+    }
+
+    public static string GetPreviousScene()
+    {
+        return previousScene;
+    }
+
+    public static void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

@@ -61,7 +61,46 @@ MonoBehaviour:
       value: '#425158ff'
       type: 0
       typeString: 
-    portrait: {fileID: 2800000, guid: 6719f64200160aa4186519543bf3c24d, type: 3}
+    portrait: {fileID: 2800000, guid: 3552f58b10958ca44a68e95f53763f36, type: 3}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 21
+    fields:
+    - title: Name
+      value: The Machine
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Your companion and guide in Anders. It protects you, but carries the
+        biases of its makers.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: EntityDisposition
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: SenseValue
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Display Name
+      value: The Machine
+      type: 0
+      typeString: 
+    - title: NodeColor
+      value: '#194754ff'
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 5c901dc6c51b95f4fab6a4649812832c, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -848,7 +887,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -4174,7 +4213,7 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: PlayAmbience
+            m_MethodName: SwitchAmbience
             m_Mode: 2
             m_Arguments:
               m_ObjectArgument: {fileID: 8300000, guid: f538487f9a258eb4896b66302d459df9, type: 3}
@@ -4186,7 +4225,31 @@ MonoBehaviour:
             m_CallState: 2
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: FadeAmbienceVolume
+            m_MethodName: BackdropChange
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 21300000, guid: ebf7fd78b8bcdb645a6178a9b206a7bc, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: BackdropFade
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: ToggleOverworldAbilities
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -4441,7 +4504,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 11
+        value: 21
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -7210,11 +7273,11 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: FadeAmbienceVolume
-            m_Mode: 1
+            m_MethodName: SwitchAmbience
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_ObjectArgument: {fileID: 8300000, guid: 59c9254907c422d4db4a1004f299680c, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -7222,8 +7285,8 @@ MonoBehaviour:
             m_CallState: 2
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: BackdropFadeLoadScene
-            m_Mode: 5
+            m_MethodName: BackdropFade
+            m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7244,10 +7307,22 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: ToggleOverworldAbilities
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 1002.4763
-        y: 584.9535
+        y: 587.9386
         width: 160
         height: 30
     - id: 54
@@ -11644,8 +11719,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: The Gruntling chirps softly. It removes its snout to look at you for
-          a moment.
+        value: The Gruntling chirps softly. It removes its snout from the dirt to
+          look at you, just for a moment.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -12987,8 +13062,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1845.2172, y: 456.42847}
-    canvasZoom: 0.76000094
+    canvasScrollPosition: {x: 389.24054, y: 106.83091}
+    canvasZoom: 0.7600014
   syncInfo:
     syncActors: 0
     syncItems: 0

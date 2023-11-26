@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class BackdropCanvasScript : Singleton<BackdropCanvasScript>
 {
@@ -43,6 +42,9 @@ public class BackdropCanvasScript : Singleton<BackdropCanvasScript>
         }
 
         if (scene != null)
-            SceneManager.LoadScene(scene);
+        {
+            Helpers.StorePreviousScene();
+            Helpers.LoadScene(scene);
+        }
     }
 }

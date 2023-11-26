@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
 
 [CreateAssetMenu(menuName = "Dialogue Utilities")]
@@ -26,8 +25,10 @@ public class DialogueUtils : ScriptableObject
     #region Scene Management
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Helpers.StorePreviousScene();
+        Helpers.LoadScene(sceneName);
     }
+
     public void QuitGame() => Application.Quit();
     #endregion
 

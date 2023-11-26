@@ -61,7 +61,46 @@ MonoBehaviour:
       value: '#425158ff'
       type: 0
       typeString: 
-    portrait: {fileID: 2800000, guid: 6719f64200160aa4186519543bf3c24d, type: 3}
+    portrait: {fileID: 2800000, guid: 3552f58b10958ca44a68e95f53763f36, type: 3}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 21
+    fields:
+    - title: Name
+      value: The Machine
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Your companion and guide in Anders. It protects you, but carries the
+        biases of its makers.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: EntityDisposition
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: SenseValue
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Display Name
+      value: The Machine
+      type: 0
+      typeString: 
+    - title: NodeColor
+      value: '#194754ff'
+      type: 0
+      typeString: 
+    portrait: {fileID: 2800000, guid: 5c901dc6c51b95f4fab6a4649812832c, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -848,7 +887,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -4465,7 +4504,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 11
+        value: 21
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -13023,8 +13062,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7600012
+    canvasScrollPosition: {x: 389.24054, y: 106.83091}
+    canvasZoom: 0.7600014
   syncInfo:
     syncActors: 0
     syncItems: 0
