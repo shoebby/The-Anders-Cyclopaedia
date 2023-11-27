@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GruntlingInteractable : MonoBehaviour, IInteractable
+public class InteractableEventBased : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private string prompt;

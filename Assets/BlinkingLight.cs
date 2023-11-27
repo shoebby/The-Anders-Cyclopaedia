@@ -1,14 +1,20 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BlinkingLight : MonoBehaviour
 {
-    private Light _light;
+    [SerializeField]
+    private float timerMax = 1f;
+
+    [SerializeField]
+    private UnityEvent onTimerZeroEvent = default;
+
     private float timerCurrent;
-    [SerializeField] private float timerMax = 1f;
+
+    public UnityEvent OnTimerZero => onTimerZeroEvent;
 
     void Awake()
     {
-        _light = GetComponent<Light>();
         timerCurrent = timerMax;
     }
 
@@ -16,7 +22,7 @@ public class BlinkingLight : MonoBehaviour
     {
         if (timerCurrent <= 0)
         {
-            _light.enabled = !_light.enabled;
+            OnTimerZero.Invoke();
             timerCurrent = timerMax;
         }
         timerCurrent -= Time.deltaTime;
