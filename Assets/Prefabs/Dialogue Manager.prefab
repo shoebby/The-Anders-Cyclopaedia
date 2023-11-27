@@ -1268,7 +1268,7 @@ MonoBehaviour:
       reportMissingAudioFiles: 0
       disableInternalSequencerCommands: 0
     inputSettings:
-      alwaysForceResponseMenu: 1
+      alwaysForceResponseMenu: 0
       includeInvalidEntries: 0
       responseTimeout: 0
       responseTimeoutAction: 0

@@ -51,7 +51,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
 
     Camera regularCamera;
 
-    void OnValidate()
+    private void OnValidate()
     {
         if (maxVerticalAngle < minVerticalAngle)
         {
@@ -59,7 +59,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
         }
     }
 
-    void Awake()
+    private new void Awake()
     {
         base.Awake();
 
@@ -76,7 +76,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
         distance = Mathf.Clamp(distance, minDistance, maxDistance);
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
         gravityAlignment =
             Quaternion.FromToRotation(
@@ -114,7 +114,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
         transform.SetPositionAndRotation(lookPosition, lookRotation);
     }
 
-    void UpdateFocusPoint()
+    private void UpdateFocusPoint()
     {
         previousFocusPoint = focusPoint;
         Vector3 targetPoint = focus.position;
@@ -138,7 +138,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
         }
     }
 
-    bool ManualRotation()
+    private bool ManualRotation()
     {
         if (disabledCameraMovement)
             return false;
@@ -158,7 +158,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
         return false;
     }
 
-    bool AutomaticRotation()
+    private bool AutomaticRotation()
     {
         if (Time.unscaledTime - lastManualRotationTime < alignDelay)
         {
@@ -189,7 +189,7 @@ public class OrbitCamera : Singleton<OrbitCamera>
         return true;
     }
 
-    void ConstrainAngles()
+    private void ConstrainAngles()
     {
         orbitAngles.x =
             Mathf.Clamp(orbitAngles.x, minVerticalAngle, maxVerticalAngle);
@@ -204,13 +204,13 @@ public class OrbitCamera : Singleton<OrbitCamera>
         }
     }
 
-    static float GetAngle(Vector2 direction)
+    private static float GetAngle(Vector2 direction)
     {
         float angle = Mathf.Acos(direction.y) * Mathf.Rad2Deg;
         return direction.x < 0f ? 360f - angle : angle;
     }
 
-    Vector3 CameraHalfExtends
+    private Vector3 CameraHalfExtends
     {
         get
         {

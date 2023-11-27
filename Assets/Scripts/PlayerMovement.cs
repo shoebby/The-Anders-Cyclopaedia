@@ -95,7 +95,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
         minClimbDotProduct = Mathf.Cos(maxClimbAngle * Mathf.Deg2Rad);
     }
 
-    private void Awake()
+    private new void Awake()
     {
         base.Awake();
 

@@ -25,8 +25,12 @@ public class DialogueUtils : ScriptableObject
     #region Scene Management
     public void LoadScene(string sceneName)
     {
-        Helpers.StorePreviousScene();
         Helpers.LoadScene(sceneName);
+    }
+
+    public void StoreScene()
+    {
+        Helpers.StorePreviousScene();
     }
 
     public void QuitGame() => Application.Quit();

@@ -43,7 +43,6 @@ public class BackdropCanvasScript : Singleton<BackdropCanvasScript>
 
         if (scene != null)
         {
-            Helpers.StorePreviousScene();
             Helpers.LoadScene(scene);
         }
     }
