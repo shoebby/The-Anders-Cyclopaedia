@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class BlinkingLight : MonoBehaviour
+public class TimedEvent : MonoBehaviour
 {
     [SerializeField]
     private float timerMax = 1f;
