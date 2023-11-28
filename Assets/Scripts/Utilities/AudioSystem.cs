@@ -1,11 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioSystem : Singleton<AudioSystem>
 {
     [SerializeField] private AudioSource ambientSource;
-    [SerializeField] private AudioSource soundsSource;
+    [SerializeField] private AudioSource clipSource;
 
     public void PlayAmbience(AudioClip clip)
     {
@@ -18,7 +17,13 @@ public class AudioSystem : Singleton<AudioSystem>
         StartCoroutine(Fade(clip));
     }
 
-    public void PlayAClip(AudioClip clip) => soundsSource.PlayOneShot(clip);
+    public void PlayAClip(AudioClip clip)
+    {
+        if (!clipSource.isPlaying)
+        {
+            clipSource.PlayOneShot(clip);
+        }
+    }
 
     public void FadeAmbienceVolume()
     {

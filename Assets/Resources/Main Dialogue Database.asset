@@ -13237,7 +13237,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(VO/Player/untitled - Track 1)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -13347,7 +13347,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(VO/machine-01)
+        value: AudioWait(VO/VO-CANOPIES_audioRecorder-01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -13402,7 +13402,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(VO/Player/untitled - Track 6)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -13513,7 +13513,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(VO/Player/untitled - Track 7)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
