@@ -6,9 +6,6 @@ public static class Helpers
 {
     public static string previousScene;
 
-    public static float ambienceVolume;
-    public static float clipVolume;
-
     public static void DestroyChildren(this Transform t)
     {
         foreach (Transform child in t) Object.Destroy(child.gameObject);
