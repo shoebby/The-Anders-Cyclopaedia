@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheCanopies.unity
     guid: 2343f4f1c79929c489e28c177b931e22
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TheDregs.unity
-    guid: 4ac003c948e28934b94a384a58ac80f6
+    guid: ba53291e9f533784e8c85b88411a8337
   m_configObjects: {}
