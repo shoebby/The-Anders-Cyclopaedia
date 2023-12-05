@@ -18181,7 +18181,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"What is your primary motivation to conduct research in Anders?"'
+        value: '"What is your primary motive for conducting research in Anders?"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -18627,8 +18627,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"We could tell him exactly what he wants to hear, that we want to
-          help exploit Anders'' wildlife and resources. That''ll hook him."'
+        value: '"We could tell him exactly what he wants to hear, that we too want
+          to exploit the wildlife and resources of Anders. That''ll hook him."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -18695,7 +18695,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"He''s beaming, we got him hooked."'
+        value: '"He''s figuratively salivating, we got him hooked."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -19729,8 +19729,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 887.9613, y: 0}
-    canvasZoom: 0.6099998
+    canvasScrollPosition: {x: 713.613, y: 0}
+    canvasZoom: 0.72999966
   syncInfo:
     syncActors: 0
     syncItems: 0
