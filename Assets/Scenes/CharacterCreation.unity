@@ -1510,6 +1510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Setup
       objectReference: {fileID: 0}
+    - target: {fileID: 5116559495966991720, guid: 945626cf5d7a4964294c53f33fb6dd68, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6597281471613664356, guid: 945626cf5d7a4964294c53f33fb6dd68, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25

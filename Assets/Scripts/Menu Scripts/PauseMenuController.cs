@@ -6,6 +6,7 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject mainPauseMenu;
     [SerializeField] GameObject optionsPauseMenu;
+    [SerializeField] GameObject confirmQuitMenu;
     [SerializeField] KeyCode pauseKey;
 
     private bool isPaused;
@@ -16,6 +17,7 @@ public class PauseMenuController : MonoBehaviour
 
         mainPauseMenu.SetActive(true);
         optionsPauseMenu.SetActive(false);
+        confirmQuitMenu.SetActive(false);
 
         pauseMenu.SetActive(false);
     }
@@ -28,7 +30,7 @@ public class PauseMenuController : MonoBehaviour
         }
     }
 
-    private void TogglePauseMenu()
+    public void TogglePauseMenu()
     {
         isPaused = !isPaused;
         if (!DialogueManager.IsConversationActive)
