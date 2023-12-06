@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTimerCurrent: 0
-  waitTimerMax: 0.05
+  waitTimerMax: 0.15
 --- !u!1 &8294406047254283226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,9 +1694,6 @@ MonoBehaviour:
     m_Bits: 16
   playerInputSpace: {fileID: 0}
   playerModel: {fileID: 3001721119621964175}
-  normalMaterial: {fileID: 2100000, guid: 7ca649cec3ad18a468de652f8e934d1d, type: 2}
-  climbingMaterial: {fileID: 2100000, guid: 2b78d053fd6282b478759f4c534f1427, type: 2}
-  swimmingMaterial: {fileID: 2100000, guid: b7d29d540f24c974bba727b76671d176, type: 2}
   playerAnimator: {fileID: 1482252794181303059}
   disabledPlayerMovement: 0
   playerInput: {x: 0, y: 0, z: 0}
