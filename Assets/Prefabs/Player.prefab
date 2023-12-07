@@ -1699,6 +1699,8 @@ MonoBehaviour:
   playerInput: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   connectionVelocity: {x: 0, y: 0, z: 0}
+  jumpKey: 0
+  climbKey: 0
 --- !u!1 &8639060867760512237
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,18 +1,23 @@
 using UnityEngine;
 
-public class PlayerAnimationController : MonoBehaviour
+public class PlayerAnimationController : Singleton<PlayerAnimationController>
 {
     private Animator animator;
 
     private string idleAnim = "Idle", jumpAnim = "Jumping", jogAnim = "Jogging", swimAnim = "Swimming", climbAnim = "Climbing", fallAnim = "Falling";
 
+    private bool inDialogue;
+
     [SerializeField]
     private float waitTimerCurrent, waitTimerMax;
 
-    void Awake()
+    new void Awake()
     {
+        base.Awake();
+
         animator = GetComponent<Animator>();
         waitTimerCurrent = waitTimerMax;
+        inDialogue = false;
     }
 
     void Update()
@@ -31,26 +36,26 @@ public class PlayerAnimationController : MonoBehaviour
             animator.speed = 1f;
 
         //Falling and Jumping
-        if (!PlayerMovement.Instance.onGround && !PlayerMovement.Instance.Climbing && !PlayerMovement.Instance.Swimming)
-        {
-            if (Physics.gravity == PlayerMovement.Instance.fallingGravity)
-                WaitUntilAnim(fallAnim);
-            else if (Physics.gravity == PlayerMovement.Instance.standardGravity)
-                WaitUntilAnim(jumpAnim);
-        }
-        else
-        {
-            waitTimerCurrent = waitTimerMax;
-        }
+        //if (!PlayerMovement.Instance.onGround && !PlayerMovement.Instance.Climbing && !PlayerMovement.Instance.Swimming)
+        //{
+        //    if (Physics.gravity == PlayerMovement.Instance.fallingGravity)
+        //        WaitUntilAnim(fallAnim);
+        //    else if (Physics.gravity == PlayerMovement.Instance.standardGravity)
+        //        WaitUntilAnim(jumpAnim);
+        //}
+        //else
+        //{
+        //    waitTimerCurrent = waitTimerMax;
+        //}
 
         //Jogging
-        if (PlayerMovement.Instance.velocity.magnitude > 0.1f)
+        if (PlayerMovement.Instance.velocity.magnitude > 0.1f && !inDialogue)
         {
             if (!PlayerMovement.Instance.Climbing && !PlayerMovement.Instance.InWater && !PlayerMovement.Instance.Swimming && PlayerMovement.Instance.onGround)
                 animator.Play(jogAnim);
         }
         //Idling
-        else if (PlayerMovement.Instance.velocity.magnitude <= 0.1)
+        else if (PlayerMovement.Instance.velocity.magnitude <= 0.1 || inDialogue)
         {
             if (!PlayerMovement.Instance.Climbing && !PlayerMovement.Instance.InWater && PlayerMovement.Instance.onGround)
                 animator.Play(idleAnim);
@@ -66,5 +71,10 @@ public class PlayerAnimationController : MonoBehaviour
         {
             waitTimerCurrent -= Time.deltaTime;
         }
+    }
+
+    public void ToggleDialogueAnim()
+    {
+        inDialogue = !inDialogue;
     }
 }

@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerMovement : Singleton<PlayerMovement>
@@ -80,8 +77,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
     private bool desiredJump, desiresClimbing;
     private int groundContactCount, steepContactCount, climbContactCount;
     private int stepsSinceLastGrounded, stepsSinceLastJump;
-    private KeyCode jumpKey = KeyCode.Space;
-    private KeyCode climbKey = KeyCode.LeftShift;
+    [SerializeField] private KeyCode jumpKey = KeyCode.Space;
+    [SerializeField] private KeyCode climbKey = KeyCode.LeftShift;
     private int jumpPhase;
     private float minGroundDotProduct, minStairsDotProduct, minClimbDotProduct;
 
