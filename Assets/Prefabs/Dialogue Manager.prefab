@@ -1770,7 +1770,7 @@ MonoBehaviour:
   stopAudioOnPauseCodes: 0
   silentCharacters: '"'
   fullPauseCharacters: 
-  quarterPauseCharacters: ',.!?;:'
+  quarterPauseCharacters: ',.!?;:-'
   fullPauseDuration: 1
   quarterPauseDuration: 0.25
   removeDuplicateTypewriterEffects: 1
