@@ -9693,8 +9693,8 @@ MonoBehaviour:
   m_text: Be sure to download (and print out) the Cyclopaedia on the game's main
     page. The game cannot be completed without it.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ee81a40e56dd2a4f86c75741f39d5b2, type: 2}
-  m_sharedMaterial: {fileID: -7163143383027285939, guid: 9ee81a40e56dd2a4f86c75741f39d5b2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
+  m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -54910,8 +54910,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Anders Cyclopaedia
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ee81a40e56dd2a4f86c75741f39d5b2, type: 2}
-  m_sharedMaterial: {fileID: -7163143383027285939, guid: 9ee81a40e56dd2a4f86c75741f39d5b2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
+  m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -60789,8 +60789,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Version 0.4 - A Taste of Bureaucracy
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ee81a40e56dd2a4f86c75741f39d5b2, type: 2}
-  m_sharedMaterial: {fileID: -7163143383027285939, guid: 9ee81a40e56dd2a4f86c75741f39d5b2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
+  m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
