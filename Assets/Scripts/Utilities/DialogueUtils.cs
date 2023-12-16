@@ -63,6 +63,8 @@ public class DialogueUtils : ScriptableObject
 
     public void BackdropFade() => BackdropCanvasScript.Instance.FadeBackdrop(null);
 
+    public void BackdropCrossfade(Sprite backdropSprite) => BackdropCanvasScript.Instance.CrossfadeBackdrop(backdropSprite);
+
     public void BackdropFadeLoadScene(string sceneName) => BackdropCanvasScript.Instance.FadeBackdrop(sceneName);
     #endregion
 
