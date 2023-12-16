@@ -81,4 +81,9 @@ public class DialogueUtils : ScriptableObject
     {
         PlayerAnimationController.Instance.ToggleDialogueAnim();
     }
+
+    public void PlayInterruption()
+    {
+        PlayInterruptionCanvasController.Instance.EnableInterruptionCanvas();
+    }
 }
