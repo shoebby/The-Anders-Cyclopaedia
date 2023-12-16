@@ -14924,7 +14924,19 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: PlayInterruption
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 303.66916
@@ -24467,8 +24479,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 270.69827}
-    canvasZoom: 0.63999987
+    canvasScrollPosition: {x: 0, y: 683.3052}
+    canvasZoom: 0.81999964
   - id: 6
     fields:
     - title: Title
@@ -36633,7 +36645,7 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: BackdropChange
+            m_MethodName: BackdropCrossfade
             m_Mode: 2
             m_Arguments:
               m_ObjectArgument: {fileID: 21300000, guid: d8a45986d2e4cff449f3bf3a30387475, type: 3}
@@ -37035,7 +37047,7 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: BackdropChange
+            m_MethodName: BackdropCrossfade
             m_Mode: 2
             m_Arguments:
               m_ObjectArgument: {fileID: 21300000, guid: 85f816adb944eb94aa796e381b40a19a, type: 3}
@@ -37102,7 +37114,7 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: BackdropChange
+            m_MethodName: BackdropCrossfade
             m_Mode: 2
             m_Arguments:
               m_ObjectArgument: {fileID: 21300000, guid: 709ff1f2d92b54e408a212a63b858937, type: 3}
@@ -37287,10 +37299,10 @@ MonoBehaviour:
             m_CallState: 2
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
-            m_MethodName: BackdropChange
+            m_MethodName: BackdropCrossfade
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgument: {fileID: 21300000, guid: bac901534349ccf4b8ac3a8bf8a17d7a, type: 3}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -37304,8 +37316,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 199.68298, y: 800.32153}
-    canvasZoom: 0.9100001
+    canvasScrollPosition: {x: 0, y: 96.33964}
+    canvasZoom: 0.52000046
   syncInfo:
     syncActors: 0
     syncItems: 0
