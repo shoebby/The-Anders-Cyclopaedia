@@ -30977,7 +30977,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"End of log #253."'
+        value: '"End of log A-0221-PQ."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -31171,7 +31171,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 519.5143
-        y: 254.30415
+        y: 253.38673
         width: 160
         height: 30
     - id: 12
@@ -31362,7 +31362,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"End of log #465."'
+        value: '"End of log A-3002-PQ."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -32946,8 +32946,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 195.52231, y: 0}
-    canvasZoom: 0.6700003
+    canvasScrollPosition: {x: 206.47295, y: 0}
+    canvasZoom: 1.0899999
   - id: 14
     fields:
     - title: Title
@@ -35749,8 +35749,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 934.9481, y: 569.16}
-    canvasZoom: 0.9100002
+    canvasScrollPosition: {x: 437.47134, y: 335.82068}
+    canvasZoom: 0.67000043
   - id: 15
     fields:
     - title: Title
@@ -37323,6 +37323,30 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
             m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: ToggleDialogueAnim
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: ToggleOverworldAbilities
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
             m_MethodName: StopAllConversations
             m_Mode: 1
             m_Arguments:
@@ -37364,8 +37388,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.46000046
+    canvasScrollPosition: {x: 30.263458, y: 526.9893}
+    canvasZoom: 0.6100004
   syncInfo:
     syncActors: 0
     syncItems: 0

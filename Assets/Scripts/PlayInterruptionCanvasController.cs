@@ -12,13 +12,23 @@ public class PlayInterruptionCanvasController : Singleton<PlayInterruptionCanvas
 
     public void EnableInterruptionCanvas()
     {
-        GameManager.Instance.Pause();
+        PlayerAnimationController.Instance.ToggleDialogueAnim();
+
+        Helpers.ToggleCursorLock();
+        Helpers.ToggleMovements();
+        Helpers.ToggleInteractor();
+
         container.SetActive(true);
     }
 
     public void DisableInterruptionCanvas()
     {
-        GameManager.Instance.Unpause();
+        PlayerAnimationController.Instance.ToggleDialogueAnim();
+
+        Helpers.ToggleCursorLock();
+        Helpers.ToggleMovements();
+        Helpers.ToggleInteractor();
+
         container.SetActive(false);
     }
 }
