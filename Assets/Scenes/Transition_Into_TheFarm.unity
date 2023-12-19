@@ -10670,6 +10670,10 @@ PrefabInstance:
       propertyPath: focus
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8617826679998179216, guid: 945626cf5d7a4964294c53f33fb6dd68, type: 3}
+      propertyPath: onStartScene.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: f1eabc27271fca043a11c2d0f1ed8cea, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

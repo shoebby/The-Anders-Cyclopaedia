@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 public class PlayInterruptionCanvasController : Singleton<PlayInterruptionCanvasController>
@@ -12,22 +13,28 @@ public class PlayInterruptionCanvasController : Singleton<PlayInterruptionCanvas
 
     public void EnableInterruptionCanvas()
     {
-        PlayerAnimationController.Instance.ToggleDialogueAnim();
+        if (!DialogueManager.IsConversationActive)
+        {
+            PlayerAnimationController.Instance.ToggleDialogueAnim();
 
-        Helpers.ToggleCursorLock();
-        Helpers.ToggleMovements();
-        Helpers.ToggleInteractor();
+            Helpers.ToggleCursorLock();
+            Helpers.ToggleMovements();
+            Helpers.ToggleInteractor();
+        }
 
         container.SetActive(true);
     }
 
     public void DisableInterruptionCanvas()
     {
-        PlayerAnimationController.Instance.ToggleDialogueAnim();
+        if (!DialogueManager.IsConversationActive)
+        {
+            PlayerAnimationController.Instance.ToggleDialogueAnim();
 
-        Helpers.ToggleCursorLock();
-        Helpers.ToggleMovements();
-        Helpers.ToggleInteractor();
+            Helpers.ToggleCursorLock();
+            Helpers.ToggleMovements();
+            Helpers.ToggleInteractor();
+        }
 
         container.SetActive(false);
     }
