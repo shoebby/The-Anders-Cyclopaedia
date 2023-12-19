@@ -24479,8 +24479,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1309.5674, y: 6690.59}
-    canvasZoom: 0.96999955
+    canvasScrollPosition: {x: 996.6056, y: 4180.3013}
+    canvasZoom: 0.84999955
   - id: 6
     fields:
     - title: Title
@@ -37382,6 +37382,18 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: 7874299ef9e79ed4db6e68f11fc09d53, type: 2}
+            m_TargetAssemblyTypeName: DialogueUtils, Assembly-CSharp
+            m_MethodName: SwitchAmbience
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 614.51276
@@ -37389,8 +37401,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 30.263458, y: 526.9893}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 216.17432, y: 667.81683}
+    canvasZoom: 0.79000026
   - id: 16
     fields:
     - title: Title

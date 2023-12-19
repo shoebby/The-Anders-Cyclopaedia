@@ -60787,7 +60787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Version 0.4 - A Taste of Bureaucracy
+  m_text: Version 0.5 - UPD Paper Playtest
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
