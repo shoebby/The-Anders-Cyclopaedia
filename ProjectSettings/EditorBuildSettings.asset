@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/CharacterCreation.unity
     guid: e0abd05db74c7e64098a84c623093704
   - enabled: 1
-    path: Assets/Scenes/Transition_Into_Anders.unity
+    path: Assets/Scenes/Pipe_ThePlains_TheGate.unity
     guid: 3e0698129a2a85b49b6bf557f2878e14
   - enabled: 1
     path: Assets/Scenes/ThePlains_TheGate.unity
     guid: ba53291e9f533784e8c85b88411a8337
   - enabled: 1
-    path: Assets/Scenes/Transition_Into_TheFarm.unity
+    path: Assets/Scenes/Pipe_ThePlains_TheFarm.unity
     guid: 7ef0287c3dbd0d846aaf1dec0d56a3d8
   - enabled: 1
     path: Assets/Scenes/ThePlains_TheFarm.unity
