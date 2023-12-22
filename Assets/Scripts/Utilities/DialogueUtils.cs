@@ -77,9 +77,14 @@ public class DialogueUtils : ScriptableObject
         Interactor.Instance.isEngaged = !Interactor.Instance.isEngaged;
     }
 
-    public void ToggleDialogueAnim()
+    public void ToggleDialogueAnimStanding()
     {
-        PlayerAnimationController.Instance.ToggleDialogueAnim();
+        PlayerAnimationController.Instance.ToggleDialogueAnim(false);
+    }
+
+    public void ToggleDialogueAnimCrouching()
+    {
+        PlayerAnimationController.Instance.ToggleDialogueAnim(true);
     }
 
     public void PlayInterruption()

@@ -15,7 +15,7 @@ public class PlayInterruptionCanvasController : Singleton<PlayInterruptionCanvas
     {
         if (!DialogueManager.IsConversationActive)
         {
-            PlayerAnimationController.Instance.ToggleDialogueAnim();
+            PlayerAnimationController.Instance.ToggleDialogueAnim(true);
 
             Helpers.ToggleCursorLock();
             Helpers.ToggleMovements();
@@ -29,7 +29,7 @@ public class PlayInterruptionCanvasController : Singleton<PlayInterruptionCanvas
     {
         if (!DialogueManager.IsConversationActive)
         {
-            PlayerAnimationController.Instance.ToggleDialogueAnim();
+            PlayerAnimationController.Instance.ToggleDialogueAnim(true);
 
             Helpers.ToggleCursorLock();
             Helpers.ToggleMovements();
