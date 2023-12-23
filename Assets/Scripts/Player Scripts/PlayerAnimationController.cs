@@ -14,6 +14,7 @@ public class PlayerAnimationController : Singleton<PlayerAnimationController>
         crouchUpAnim = "Crouch Up Anim";
 
     private bool inDialogue;
+    [SerializeField]  bool startProne = false;
 
     [SerializeField]
     private float waitTimer;
@@ -25,6 +26,12 @@ public class PlayerAnimationController : Singleton<PlayerAnimationController>
         animator = GetComponent<Animator>();
         waitTimer = 0;
         inDialogue = false;
+    }
+
+    private void Start()
+    {
+        if (startProne)
+            BogsGetup();
     }
 
     void Update()
@@ -91,5 +98,11 @@ public class PlayerAnimationController : Singleton<PlayerAnimationController>
             animator.Play(idleAnim);
 
         inDialogue = !inDialogue;
+    }
+
+    public void BogsGetup()
+    {
+        waitTimer = 11f;
+        animator.Play("Prone Getup");
     }
 }
