@@ -245,7 +245,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Character Creation Short
+  conversation: Character Creation/Short
   conversationConversant: {fileID: 2634604981877997405}
   conversationActor: {fileID: 1544209682}
   startConversationEntryID: -1

@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThePlains_TheFarm.unity
     guid: 31a24ffdf2683684f986baff38962dc4
+  - enabled: 1
+    path: Assets/Scenes/Pipe_TheBogs.unity
+    guid: f96f650d9c6cdf341bcda3e0e62d43a6
+  - enabled: 1
+    path: Assets/Scenes/TheBogs.unity
+    guid: 4d47ae249b6727148980df4b701dc329
   m_configObjects: {}

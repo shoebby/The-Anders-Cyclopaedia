@@ -4621,7 +4621,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Pipe_StrangelyEmpty
+  conversation: TheFarm/Pipe
   conversationConversant: {fileID: 197539116}
   conversationActor: {fileID: 1791875179}
   startConversationEntryID: -1
