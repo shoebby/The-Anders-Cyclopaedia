@@ -65,7 +65,7 @@ MonoBehaviour:
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
     prependActorNameFormat: '{0}{1}'
-    subtitleColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
+    subtitleColor: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
 --- !u!82 &2562027288396646563
 AudioSource:
   m_ObjectHideFlags: 0

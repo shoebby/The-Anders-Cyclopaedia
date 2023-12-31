@@ -1475,10 +1475,10 @@ MonoBehaviour:
     useMenuPanelFor: 0
     portraitAnimatorController: {fileID: 0}
     setSubtitleColor: 1
-    applyColorToPrependedName: 1
+    applyColorToPrependedName: 0
     prependActorNameSeparator: ' - '
     prependActorNameFormat: '{0}{1}'
-    subtitleColor: {r: 1, g: 0.67267406, b: 0.21226418, a: 1}
+    subtitleColor: {r: 0.7735849, g: 0.5581132, b: 0.25178, a: 1}
 --- !u!1 &2253976826995081791
 GameObject:
   m_ObjectHideFlags: 0
