@@ -8,7 +8,7 @@ public class DialogueUtils : ScriptableObject
     {
         int senseValue = DialogueManager.masterDatabase.GetActor(senseActorName).LookupInt("SenseValue");
 
-        int roll = Random.Range(1, 6);
+        int roll = Random.Range(1, 7);
         Debug.Log("Rolled " + roll + " + " + senseValue);
         roll += senseValue;
         DialogueLua.SetVariable("General.CheckRoll", roll);
