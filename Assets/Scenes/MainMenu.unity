@@ -9968,7 +9968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &409916960
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9983,10 +9983,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 144062791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 191.6}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 479.99997, y: -275.4082}
+  m_SizeDelta: {x: 863.99994, y: 191.6}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &409916961
 MonoBehaviour:
@@ -10815,8 +10815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 383.99994, y: -173.35419}
-  m_SizeDelta: {x: 767.9999, y: 73.7292}
+  m_AnchoredPosition: {x: 383.99994, y: -396.3106}
+  m_SizeDelta: {x: 767.9999, y: 71.02707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554626152
 MonoBehaviour:
@@ -45747,8 +45747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 383.99994, y: -69.3}
-  m_SizeDelta: {x: 767.9999, y: 122.6}
+  m_AnchoredPosition: {x: 383.99994, y: -184.39853}
+  m_SizeDelta: {x: 767.9999, y: 352.79706}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946238595
 MonoBehaviour:
@@ -45770,7 +45770,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Is this your first time playing The Anders Cyclopaedia?
+  m_text: 'For this showcase version there are two game intro options.
+
+    The full
+    interview gives more insight into the game''s world, and takes about 10-15 minutes.
+
+    The
+    shortened interview is more concise, and gets you into Anders quicker.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
@@ -52417,8 +52423,8 @@ RectTransform:
   - {fileID: 554626151}
   m_Father: {fileID: 1499672487}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3, y: 0.4}
-  m_AnchorMax: {x: 0.7, y: 0.6}
+  m_AnchorMin: {x: 0.3, y: 0.3}
+  m_AnchorMax: {x: 0.7, y: 0.7}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -52444,7 +52450,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -61212,7 +61218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Version 0.6 - Beyond the void
+  m_text: Version 0.6 - A Peek Beyond the void
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}
   m_sharedMaterial: {fileID: -7163143383027285939, guid: 6fc5933e1389dff4dabe62d9f5f55918, type: 2}

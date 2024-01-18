@@ -3,7 +3,7 @@ using PixelCrushers.DialogueSystem;
 
 [CreateAssetMenu(menuName = "Dialogue Utilities")]
 public class DialogueUtils : ScriptableObject
-{
+{   
     public void GenerateCheckRoll(string senseActorName)
     {
         int senseValue = DialogueManager.masterDatabase.GetActor(senseActorName).LookupInt("SenseValue");
@@ -77,6 +77,10 @@ public class DialogueUtils : ScriptableObject
         Interactor.Instance.isEngaged = !Interactor.Instance.isEngaged;
     }
 
+    public void ToggleMovement()
+    {
+        Helpers.ToggleMovements();
+    }
     public void ToggleDialogueAnimStanding()
     {
         PlayerAnimationController.Instance.ToggleDialogueAnim(false);
@@ -90,5 +94,33 @@ public class DialogueUtils : ScriptableObject
     public void PlayInterruption()
     {
         PlayInterruptionCanvasController.Instance.EnableInterruptionCanvas();
+    }
+
+    public void ResetAllVariables()
+    {
+        Debug.Log("Printing pre reset sense values");
+        for (int i = 2; i < 10; i++)
+        {
+            Debug.Log(DialogueManager.masterDatabase.GetActor(i).Name + ": " + DialogueManager.masterDatabase.GetActor(i).LookupInt("SenseValue"));
+        }
+
+        DialogueManager.ResetDatabase(DatabaseResetOptions.RevertToDefault);
+
+        Debug.Log("Printing post reset sense values");
+        for (int i = 2; i < 10; i++)
+        {
+            Debug.Log(DialogueManager.masterDatabase.GetActor(i).Name + ": " + DialogueManager.masterDatabase.GetActor(i).LookupInt("SenseValue"));
+        }
+        
+    }
+
+    public void CheckSenseValues()
+    {
+        Debug.Log("------------------------------------------------");
+        for (int i = 2; i < 10; i++)
+        {
+            Debug.Log(DialogueManager.masterDatabase.GetActor(i).Name + ": " + DialogueManager.masterDatabase.GetActor(i).LookupInt("SenseValue"));
+        }
+        Debug.Log("------------------------------------------------");
     }
 }
